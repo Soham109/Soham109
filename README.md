@@ -26,7 +26,7 @@
 
 <br/>
 
-**CS & Math @ UW–Madison** · Dean's List · **3.96 GPA** · class of '28 · Madison, WI
+**CS & Math @ UW–Madison**
 
 I am currently exploring **quantitative finance** and **systems software** — margin engines, market microstructure, and ML pipelines. Currently a **Risk intern @ NSE Clearing**; previously tech lead of **Neuro86 @ MIT Media Lab**. I build the side quests too, whenever a problem refuses to leave my head.
 
