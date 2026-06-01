@@ -4,7 +4,7 @@
 
 **CS & Math · UW–Madison · '28**
 
-<sub>markets · risk · systems · ML · competitive programming</sub>
+<sub>markets · risk · systems · ML</sub>
 
 <br/>
 
@@ -22,17 +22,16 @@
 
 <br/>
 
-CS + Math student who builds at the intersection of **markets** and **software** — risk engines, microstructure models, and tools that make hard workflows disappear.
+CS + Math student working at the intersection of **markets** and **software** — risk engines, microstructure models, and the occasional side project.
 
-**NSE Clearing** (risk intern) by day. **CPOS** and side projects by night. Previously tech lead on **Neuro86** at MIT Media Lab.
+**Risk intern @ NSE Clearing.** Previously tech lead on **Neuro86** at MIT Media Lab.
 
 <br/>
 
 ### Now
 
 - **NSE Clearing** — max-flow collateral optimization, margin recompute, portfolio risk & backtests
-- **CPOS** — competitive programming OS · terminal + VS Code + Chrome
-- **School** — probability, linear algebra, algorithms · Dean's List · 3.96 GPA
+- **UW–Madison** — probability, linear algebra, algorithms · Dean's List · 3.96 GPA
 
 <br/>
 
@@ -59,7 +58,7 @@ Collateral optimization for **1M+ client accounts** — Dinic max-flow over spar
 
 Portfolio analytics: efficient frontiers, rolling backtests, Sharpe & Jensen's alpha.
 
-<sub>Python · graph algorithms · risk systems · intern</sub>
+<sub>Python · graph algorithms · risk systems</sub>
 
 </td>
 </tr>
@@ -67,42 +66,29 @@ Portfolio analytics: efficient frontiers, rolling backtests, Sharpe & Jensen's a
 
 <br/>
 
-## Software
+## Side projects
 
 <table border="0" cellspacing="0" cellpadding="16">
 <tr>
-<td width="50%" valign="top">
-
-<a href="https://github.com/Soham109/cpos">
-  <img src="https://raw.githubusercontent.com/Soham109/cpos/main/docs/img/dashboard.webp" alt="CPOS dashboard" width="100%"/>
-</a>
-
-<br/>
-
-### [CPOS](https://github.com/Soham109/cpos)
-
-Browse Codeforces in your terminal — capture samples, run tests, submit, track rating. All local.
-
-<sub>Rust · TUI · VS Code · Chrome</sub>
-
-<br/>
-
-[Website](https://cpos.sohamaggarwal.com) · [VS Code](https://marketplace.visualstudio.com/items?itemName=sohamaggarwal.cpos-vscode) · [Chrome](https://chromewebstore.google.com/detail/gjnbapmjonegeeamdeahcoojgokeogmm)
-
-</td>
-<td width="50%" valign="top">
+<td width="33%" valign="top">
 
 ### [Codebase RAG](https://github.com/Soham109/Codebase-RAG-Backend)
 
-Chat with any GitHub repo — embed the codebase, cosine search, LLM answers.
+Chat with any GitHub repo — embed code, cosine search, LLM answers.
 
 <sub>FastAPI · Pinecone · Next.js</sub>
 
-<br/>
+</td>
+<td width="33%" valign="top">
 
-[Frontend](https://github.com/Soham109/codebase-rag-frontend) · [Backend](https://github.com/Soham109/Codebase-RAG-Backend)
+### [CPOS](https://github.com/Soham109/cpos)
 
-<br/><br/>
+Side project — terminal tool for competitive programming. Browse problems, run samples, submit.
+
+<sub>Rust · VS Code · Chrome</sub>
+
+</td>
+<td width="33%" valign="top">
 
 ### [Cursor Hacks '26](https://github.com/Soham109/claudehacks2026)
 
@@ -150,6 +136,6 @@ Chat with any GitHub repo — embed the codebase, cosine search, LLM answers.
 
 <div align="center">
 
-*Building something weird and useful — markets, tools, or both? I'd love to hear about it.*
+*Building something in markets or software? I'd love to hear about it.*
 
 </div>
