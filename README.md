@@ -1,156 +1,97 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/banner.png" width="960" alt="Soham Aggarwal pixel banner"/>
-
-<br/>
-
-<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/hud.png" width="720" alt="Player HUD"/>
+<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/banner.png" width="960" alt="Soham Aggarwal"/>
 
 <br/><br/>
 
-<a href="https://sohamaggarwal.com"><img src="https://img.icons8.com/fluency/48/domain.png" width="32" height="32" alt="Website"/></a>&nbsp;
-<a href="https://www.linkedin.com/in/soham-aggarwal5/"><img src="https://img.icons8.com/fluency/48/linkedin.png" width="32" height="32" alt="LinkedIn"/></a>&nbsp;
-<a href="mailto:saggarwal44@wisc.edu"><img src="https://img.icons8.com/fluency/48/new-post.png" width="32" height="32" alt="Email"/></a>&nbsp;
-<a href="https://github.com/Soham109"><img src="https://img.icons8.com/fluency/48/github.png" width="32" height="32" alt="GitHub"/></a>&nbsp;
-<a href="https://monkeytype.com/profile/FastestTypist5"><img src="https://img.icons8.com/fluency/48/keyboard.png" width="32" height="32" alt="Monkeytype"/></a>
-
-<br/><br/>
-
-<pre>
-╔══════════════════════════════════════════════════════════════════╗
-║  PRESS START — half math problem, half systems problem.          ║
-║  That's the sweet spot.                                          ║
-╚══════════════════════════════════════════════════════════════════╝
-</pre>
-
-</div>
-
-<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/divider.png" width="800" height="20" alt=""/>
-
-<br/>
-
-## 🎮 PLAYER SELECT
-
-<table>
-<tr>
-<td width="50%">
-
-**CS & Math @ UW–Madison** · Dean's List · **3.96 GPA** · '28
-
-Risk intern @ **NSE Clearing**. Ex tech lead **Neuro86** @ MIT Media Lab.
-
-I build where **quantitative finance** meets **software** — margin engines, market microstructure, ML pipelines, and side quests when something won't leave my head alone.
-
-</td>
-<td width="50%" align="center">
-
-```
-    ██╗    ██╗ ██████╗ ██████╗ ██╗     ██████╗ 
-    ██║    ██║██╔═══██╗██╔══██╗██║     ██╔══██╗
-    ██║ █╗ ██║██║   ██║██║  ██║██║     ██║  ██║
-    ██║███╗██║██║   ██║██║  ██║██║     ██║  ██║
-    ╚███╔███╔╝╚██████╔╝██████╔╝███████╗██████╔╝
-     ╚══╝╚══╝  ╚═════╝ ╚═════╝ ╚══════╝╚═════╝ 
-         L E V E L   S E L E C T
-```
-
-</td>
-</tr>
-</table>
-
-<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/divider.png" width="800" height="20" alt=""/>
-
-<br/>
-
-## 🗺️ MAIN WORLDS
-
-<div align="center">
-
-<a href="https://www.linkedin.com/in/soham-aggarwal5/">
-<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/level-nse.png" width="420" alt="NSE Clearing"/>
-</a>
+<a href="https://sohamaggarwal.com"><img src="https://img.icons8.com/fluency/48/domain.png" width="34" height="34" alt="Website"/></a>
 &nbsp;&nbsp;
-<a href="https://github.com/Soham109/limit-order-book-forecasting">
-<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/level-lob.png" width="420" alt="LOB Forecasting"/>
-</a>
+<a href="https://www.linkedin.com/in/soham-aggarwal5/"><img src="https://img.icons8.com/fluency/48/linkedin.png" width="34" height="34" alt="LinkedIn"/></a>
+&nbsp;&nbsp;
+<a href="mailto:saggarwal44@wisc.edu"><img src="https://img.icons8.com/fluency/48/new-post.png" width="34" height="34" alt="Email"/></a>
+&nbsp;&nbsp;
+<a href="https://github.com/Soham109"><img src="https://img.icons8.com/fluency/48/github.png" width="34" height="34" alt="GitHub"/></a>
+&nbsp;&nbsp;
+<a href="https://monkeytype.com/profile/FastestTypist5"><img src="https://img.icons8.com/fluency/48/keyboard.png" width="34" height="34" alt="Monkeytype"/></a>
+
+<br/>
+
+<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/divider.png" width="800" height="24" alt=""/>
+
+<br/>
+
+<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/hdr-about.png" width="800" alt="Player Profile"/>
 
 </div>
 
 <br/>
 
+**CS & Math @ UW–Madison** · Dean's List · **3.96 GPA** · class of '28 · Madison, WI
+
+I live where **quantitative finance** meets **systems software** — margin engines, market microstructure, and ML pipelines. Currently a **Risk intern @ NSE Clearing**; previously tech lead of **Neuro86 @ MIT Media Lab**. I build the side quests too, whenever a problem refuses to leave my head.
+
+<br/>
+
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/level-secret.png" width="420" alt="Secret worlds"/>
+<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/hdr-quests.png" width="800" alt="Main Quests"/>
+
+<br/><br/>
+
+<a href="https://www.linkedin.com/in/soham-aggarwal5/"><img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/card-nse.png" width="464" alt="NSE Clearing — risk intern"/></a>
+&nbsp;&nbsp;
+<a href="https://github.com/Soham109/limit-order-book-forecasting"><img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/card-lob.png" width="464" alt="Limit order book forecasting"/></a>
 
 </div>
 
 <br/>
 
-<table>
-<tr>
-<td width="50%">
-
-### 🟣 [Codebase RAG](https://github.com/Soham109/Codebase-RAG-Backend)
-
-Chat with any repo — embeddings, cosine search, LLM answers over your codebase.
-
-</td>
-<td width="50%">
-
-### 🟢 [CPOS](https://github.com/Soham109/cpos)
-
-Secret level · side project · terminal tool for competitive programming.
-
-</td>
-</tr>
-</table>
-
-<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/divider.png" width="800" height="20" alt=""/>
+> **NSE Clearing** — collateral optimization across **1M+ accounts**: Dinic max-flow on sparse ownership graphs, graph pruning (~70% fewer active nodes), margin recompute, efficient frontiers, rolling backtests, Sharpe & Jensen's alpha.
+>
+> **[LOB Forecasting](https://github.com/Soham109/limit-order-book-forecasting)** — short-horizon limit order book prediction: spread, queue imbalance, microprice, depth pressure and vol signals into mid-price classifiers on FI-2010 — **0.841** macro F1 @ h3.
 
 <br/>
 
-## ⌨️ HIGH SCORES
-
 <div align="center">
 
-<a href="https://monkeytype.com/profile/FastestTypist5">
-<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/typing.png" width="720" alt="Monkeytype high scores"/>
-</a>
+<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/hdr-projects.png" width="800" alt="Side Quests"/>
 
-</div>
+<br/><br/>
 
-<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/divider.png" width="800" height="20" alt=""/>
+<a href="https://github.com/Soham109/Codebase-RAG-Backend"><img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/card-rag.png" width="464" alt="Codebase RAG"/></a>
+&nbsp;&nbsp;
+<a href="https://github.com/Soham109/cpos"><img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/card-cpos.png" width="464" alt="CPOS"/></a>
 
-<br/>
+<br/><br/>
 
-## 🎒 INVENTORY
+<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/hdr-scores.png" width="800" alt="High Scores"/>
 
-<div align="center">
+<br/><br/>
+
+<a href="https://monkeytype.com/profile/FastestTypist5"><img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/typing.png" width="800" alt="Monkeytype high scores — 193/155/141/217 WPM"/></a>
+
+<br/><br/>
+
+<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/hdr-inventory.png" width="800" alt="Inventory"/>
+
+<br/><br/>
 
 <img src="https://skillicons.dev/icons?i=python,rust,cpp,ts,react,nextjs,fastapi,postgres,docker,linux,git,vscode&perline=12" alt="Python, Rust, C++, TypeScript, React, Next.js, FastAPI, PostgreSQL, Docker, Linux, Git, VS Code"/>
 
-</div>
+<br/><br/>
+
+<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/hdr-trophies.png" width="800" alt="Trophies"/>
+
+<br/><br/>
+
+<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/trophy.png" width="800" alt="Achievements: BadgerAI 1st, Cursor Hacks 1st, UW Blockchain 2nd, 2x AIME, IOQM top 10%, published ML research"/>
 
 <br/>
 
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/trophy.png" width="720" alt="Achievements"/>
-
-</div>
+<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/divider.png" width="800" height="24" alt=""/>
 
 <br/>
 
-<div align="center">
-
-```
-┌────────────────────────────────────────────────────────────┐
-│  GAME OVER?  Nah.  Just saving progress.                   │
-│  sohamaggarwal.com  ·  open to interesting work            │
-│  in markets & software                                     │
-└────────────────────────────────────────────────────────────┘
-```
-
-**[sohamaggarwal.com](https://sohamaggarwal.com)** · INSERT COIN TO CONTINUE 🪙
+**[sohamaggarwal.com](https://sohamaggarwal.com)** · open to interesting work in markets & software · `INSERT COIN TO CONTINUE`
 
 </div>

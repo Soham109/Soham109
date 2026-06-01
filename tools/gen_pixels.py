@@ -1,240 +1,392 @@
 #!/usr/bin/env python3
-"""Generate pixel-art PNG assets for the profile README."""
+"""Generate a cohesive set of pixel-art PNG assets for the GitHub profile README.
+
+Technique: scenery is drawn on a small logical canvas (1 unit == 1 pixel-art
+pixel) then upscaled with NEAREST so every pixel stays crisp. Text is drawn on a
+separate full-resolution layer with the Press Start 2P bitmap font so it renders
+sharp, then composited on top.
+"""
 from __future__ import annotations
 
 import os
 from PIL import Image, ImageDraw, ImageFont
 
-OUT = os.path.join(os.path.dirname(__file__), "..", "assets")
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+OUT = os.path.join(ROOT, "assets")
+FONT_PATH = os.path.join(os.path.dirname(__file__), "fonts", "PressStart2P.ttf")
 
-SKY, SKY2 = (92, 148, 252), (68, 120, 220)
-CLOUD = (240, 248, 255)
-BRICK, BRICK_D = (180, 80, 40), (140, 55, 25)
-GRASS, GRASS_D = (60, 180, 60), (40, 130, 40)
-GOLD, GOLD_D = (255, 210, 60), (200, 150, 30)
-WHITE, BLACK = (255, 255, 255), (25, 25, 45)
-SKIN, SHIRT, PANTS, HAIR = (255, 200, 150), (60, 140, 255), (50, 50, 90), (60, 35, 20)
-RED = (229, 37, 33)
-BLUE = (60, 140, 255)
-PURPLE = (120, 80, 180)
+# ---- palette ---------------------------------------------------------------
+SKY_HI = (120, 168, 255)
+SKY = (92, 148, 252)
+SKY_LO = (74, 128, 238)
+CLOUD = (250, 252, 255)
+CLOUD_SH = (196, 214, 255)
+HILL = (64, 188, 92)
+HILL_D = (40, 148, 64)
+GRASS = (96, 208, 88)
+GRASS_D = (56, 160, 64)
+DIRT = (150, 92, 52)
+DIRT_D = (118, 70, 38)
+BRICK = (206, 102, 52)
+BRICK_D = (156, 70, 32)
+QBLOCK = (252, 200, 72)
+QBLOCK_D = (210, 150, 36)
+COIN = (252, 220, 96)
+COIN_D = (224, 168, 40)
+PIPE = (72, 196, 96)
+PIPE_D = (40, 150, 70)
+PANEL = (22, 22, 42)
+PANEL_LO = (14, 14, 30)
+GOLD = (255, 210, 78)
+WHITE = (245, 247, 252)
+GREY = (158, 162, 188)
+RED = (228, 60, 56)
+BLUE = (74, 144, 255)
+PURPLE = (158, 110, 232)
+GREEN = (86, 196, 110)
+SKIN = (255, 200, 152)
+SKIN_SH = (228, 160, 120)
+HAIR = (74, 46, 28)
+HOODIE = (66, 122, 232)
+HOODIE_D = (44, 90, 188)
+PANTS = (52, 56, 92)
+SHOE = (40, 40, 50)
 
 
-def font(size: int, bold: bool = True) -> ImageFont.FreeTypeFont | ImageFont.ImageFont:
-    candidates = [
-        "/System/Library/Fonts/Supplemental/Courier New Bold.ttf",
-        "/System/Library/Fonts/Supplemental/Courier New.ttf",
-        "/Library/Fonts/Courier New Bold.ttf",
+def font(size: int) -> ImageFont.FreeTypeFont:
+    return ImageFont.truetype(FONT_PATH, size)
+
+
+def new_scene(w: int, h: int, bg=SKY):
+    img = Image.new("RGB", (w, h), bg)
+    return img, ImageDraw.Draw(img)
+
+
+def upscale(img: Image.Image, s: int) -> Image.Image:
+    return img.resize((img.width * s, img.height * s), Image.NEAREST)
+
+
+def text_layer(w: int, h: int):
+    layer = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+    return layer, ImageDraw.Draw(layer)
+
+
+def draw_text(d, xy, s, fill, size, anchor=None, shadow=None):
+    if shadow is not None:
+        d.text((xy[0] + 2, xy[1] + 2), s, fill=shadow, font=font(size), anchor=anchor)
+    d.text(xy, s, fill=fill, font=font(size), anchor=anchor)
+
+
+# ---- pixel primitives (operate on the small logical canvas) ----------------
+def rect(d, x, y, w, h, c):
+    d.rectangle([x, y, x + w - 1, y + h - 1], fill=c)
+
+
+def sky_gradient(d, w, h):
+    band = max(1, h // 3)
+    rect(d, 0, 0, w, band, SKY_HI)
+    rect(d, 0, band, w, band, SKY)
+    rect(d, 0, 2 * band, w, h - 2 * band, SKY_LO)
+
+
+def cloud(d, x, y):
+    # puffy cloud ~ 22x9
+    body = [
+        "....XXXXXX....",
+        "..XXXXXXXXXX..",
+        ".XXXXXXXXXXXX.",
+        "XXXXXXXXXXXXXX",
+        "XXXXXXXXXXXXXX",
     ]
-    if not bold:
-        candidates.reverse()
-    for path in candidates:
-        if os.path.exists(path):
-            return ImageFont.truetype(path, size)
-    return ImageFont.load_default()
+    for ry, row in enumerate(body):
+        for rx, ch in enumerate(row):
+            if ch == "X":
+                d.point((x + rx, y + ry), fill=CLOUD)
+    for rx in range(14):
+        d.point((x + rx, y + 5), fill=CLOUD_SH)
 
 
-def px(draw: ImageDraw.ImageDraw, x: int, y: int, s: int, c: tuple[int, int, int]) -> None:
-    draw.rectangle([x * s, y * s, (x + 1) * s - 1, (y + 1) * s - 1], fill=c)
+def hill(d, cx, base, r):
+    for i in range(r):
+        y = base - i
+        half = r - i
+        rect(d, cx - half, y, half * 2, 1, HILL)
+    rect(d, cx - 2, base - r, 1, 1, HILL_D)
 
 
-def draw_cloud(draw: ImageDraw.ImageDraw, ox: int, oy: int, s: int) -> None:
-    for dx, dy in [(0, 1), (1, 0), (1, 1), (2, 1), (3, 1), (1, 2), (2, 2)]:
-        px(draw, ox + dx, oy + dy, s, CLOUD)
+def bush(d, x, base):
+    rect(d, x, base - 2, 10, 2, HILL_D)
+    rect(d, x + 1, base - 4, 3, 2, HILL)
+    rect(d, x + 5, base - 5, 3, 3, HILL)
 
 
-def draw_brick(draw: ImageDraw.ImageDraw, ox: int, oy: int, s: int, q: bool = False) -> None:
-    for row in range(4):
-        for col in range(4):
-            px(draw, ox + col, oy + row, s, BRICK if (row + col) % 2 == 0 else BRICK_D)
-    if q:
-        for x, y in [(1, 0), (2, 0), (2, 1), (1, 2), (1, 3)]:
-            px(draw, ox + x, oy + y, s, GOLD_D)
+def coin(d, x, y):
+    art = [".XX.", "X..X", "X..X", "X..X", ".XX."]
+    for ry, row in enumerate(art):
+        for rx, ch in enumerate(row):
+            if ch == "X":
+                d.point((x + rx, y + ry), fill=COIN_D)
+            else:
+                if 0 < rx < 3:
+                    d.point((x + rx, y + ry), fill=COIN)
 
 
-def draw_hero(draw: ImageDraw.ImageDraw, ox: int, oy: int, s: int) -> None:
-    rows = [
-        "  HHHH  ",
-        " HSSSSSH ",
-        "HSSSSSSSH",
-        " HHSSSHH ",
-        "  TTTT  ",
-        " TT  TT ",
-        " PP  PP ",
-        " PP  PP ",
+def qblock(d, x, y):
+    rect(d, x, y, 8, 8, QBLOCK)
+    rect(d, x, y, 8, 1, QBLOCK_D)
+    rect(d, x, y + 7, 8, 1, QBLOCK_D)
+    rect(d, x, y, 1, 8, QBLOCK_D)
+    rect(d, x + 7, y, 1, 8, QBLOCK_D)
+    for px, py in [(3, 2), (4, 2), (4, 3), (3, 4), (3, 6)]:
+        d.point((x + px, y + py), fill=QBLOCK_D)
+    for cx, cy in [(1, 1), (6, 1), (1, 6), (6, 6)]:
+        d.point((x + cx, y + cy), fill=QBLOCK_D)
+
+
+def brick(d, x, y):
+    rect(d, x, y, 8, 8, BRICK)
+    for ry in range(0, 8, 2):
+        rect(d, x, y + ry, 8, 1, BRICK_D)
+    for ry in range(0, 8, 4):
+        d.point((x + 3, y + ry), fill=BRICK_D)
+        d.point((x + 7, y + ry + 2), fill=BRICK_D)
+
+
+def ground(d, w, top, h):
+    rect(d, 0, top, w, 2, GRASS)
+    rect(d, 0, top + 2, w, 1, GRASS_D)
+    rect(d, 0, top + 3, w, h - 3, DIRT)
+    for x in range(0, w, 6):
+        d.point((x, top + 5), fill=DIRT_D)
+        d.point((x + 3, top + 7), fill=DIRT_D)
+
+
+def pipe(d, x, base):
+    top_w, body_w = 14, 10
+    h = 14
+    rect(d, x, base - h, top_w, 4, PIPE)
+    rect(d, x, base - h, top_w, 1, (140, 230, 150))
+    rect(d, x + (top_w - body_w) // 2, base - h + 4, body_w, h - 4, PIPE)
+    rect(d, x + (top_w - body_w) // 2, base - h + 4, 1, h - 4, PIPE_D)
+
+
+def hero(d, x, base):
+    # original 16-wide developer/adventurer sprite, 22 tall, feet at `base`
+    art = [
+        "....HHHHHH....",
+        "...HHHHHHHH...",
+        "..HHSSSSSSHH..",
+        "..HSSSSSSSSH..",
+        "..SSKSSSSKSS..",  # eyes (K)
+        "..SSSSSSSSSS..",
+        "..SSSWWWWSSS..",  # mouth (W)
+        "...SSSSSSSS...",
+        "..BBBBBBBBBB..",
+        ".BBBBBBBBBBBB.",
+        "BB.BBBBBBBB.BB",
+        "BB.BBBBBBBB.BB",
+        "SS.BBBBBBBB.SS",  # hands (S) at sides
+        "...BBBBBBBB...",
+        "...BBB..BBB...",
+        "...PPP..PPP...",
+        "...PPP..PPP...",
+        "...PPP..PPP...",
+        "...PPP..PPP...",
+        "..EEEE..EEEE..",
     ]
-    cmap = {"H": HAIR, "S": SKIN, "T": SHIRT, "P": PANTS}
-    for row, line in enumerate(rows):
-        for col, ch in enumerate(line):
-            if ch != " ":
-                px(draw, ox + col, oy + row, s, cmap[ch])
+    cmap = {
+        "H": HAIR,
+        "S": SKIN,
+        "K": (30, 30, 40),
+        "W": (180, 90, 90),
+        "B": HOODIE,
+        "P": PANTS,
+        "E": SHOE,
+    }
+    top = base - len(art)
+    for ry, row in enumerate(art):
+        for rx, ch in enumerate(row):
+            if ch in cmap:
+                d.point((x + rx, top + ry), fill=cmap[ch])
+    # hoodie shading on right edge
+    for ry in range(8, 14):
+        d.point((x + 11, top + ry), fill=HOODIE_D)
 
 
-def banner() -> None:
-    w, h, s = 960, 220, 4
-    img = Image.new("RGB", (w, h), SKY)
-    d = ImageDraw.Draw(img)
-    for y in range(0, 44, 2):
-        d.rectangle([0, y * s, w, (y + 1) * s], fill=SKY if y % 4 == 0 else SKY2)
-    draw_cloud(d, 8, 3, s)
-    draw_cloud(d, 55, 5, s)
-    draw_cloud(d, 120, 2, s)
-    draw_cloud(d, 180, 6, s)
-    d.rectangle([0, 160, w, 176], fill=GRASS)
-    d.rectangle([0, 176, w, h], fill=GRASS_D)
-    draw_brick(d, 4, 38, s)
-    draw_brick(d, 9, 38, s, True)
-    draw_brick(d, 14, 38, s)
-    draw_hero(d, 168, 33, s)
-    d.ellipse([736, 142, 764, 170], fill=GOLD, outline=GOLD_D)
-    d.rectangle([200, 48, 760, 152], fill=WHITE)
-    d.rectangle([204, 52, 756, 148], fill=BLACK)
-    d.text((480, 72), "SOHAM AGGARWAL", fill=GOLD, font=font(36), anchor="mm")
-    d.text((480, 118), "CS + MATH  |  MARKETS  |  RISK  |  SYSTEMS", fill=WHITE, font=font(16), anchor="mm")
-    img.save(os.path.join(OUT, "banner.png"), optimize=True)
+def flag(d, x, base):
+    h = 30
+    rect(d, x, base - h, 1, h, (210, 215, 230))
+    rect(d, x - 8, base - h, 8, 6, GREEN)
+    d.point((x, base - h), fill=GOLD)
 
 
-def hud() -> None:
-    w, h = 720, 88
-    img = Image.new("RGB", (w, h), BLACK)
-    d = ImageDraw.Draw(img)
-    d.rectangle([0, 0, w - 1, h - 1], outline=GOLD, width=3)
-    d.rectangle([0, 0, w, 4], fill=GOLD)
-    d.rectangle([0, h - 4, w, h], fill=GOLD_D)
-    heart = [
-        (20, 16), (28, 16), (36, 16),
-        (12, 24), (20, 24), (28, 24), (36, 24), (44, 24),
-        (20, 32), (28, 32), (36, 32), (28, 40),
-    ]
-    for x, y in heart:
-        d.rectangle([x, y, x + 7, y + 7], fill=RED)
-    d.text((58, 14), "PLAYER", fill=GOLD, font=font(12))
-    d.text((58, 38), "UW-Madison '28", fill=WHITE, font=font(18))
-    d.ellipse([268, 20, 292, 44], fill=GOLD, outline=GOLD_D)
-    d.text((300, 14), "COINS", fill=GOLD, font=font(12))
-    d.text((300, 38), "193 WPM", fill=WHITE, font=font(18))
-    d.rectangle([500, 16, 532, 32], fill=GRASS)
-    d.rectangle([516, 16, 532, 32], fill=GRASS_D)
-    d.rectangle([500, 32, 532, 48], fill=GRASS_D)
-    d.rectangle([516, 32, 532, 48], fill=GRASS)
-    d.text((540, 14), "WORLD", fill=GOLD, font=font(12))
-    d.text((540, 38), "Madison, WI", fill=WHITE, font=font(18))
-    d.text((58, 72), "GPA 3.96 | Dean's List | CS & Math", fill=(136, 136, 136), font=font(11))
-    d.text((540, 72), "TOP 0.44% TYPING", fill=(136, 136, 136), font=font(11))
-    img.save(os.path.join(OUT, "hud.png"), optimize=True)
+def panel(d, x, y, w, h, fill=PANEL, border=WHITE, inner=PANEL_LO):
+    rect(d, x, y, w, h, border)
+    rect(d, x + 1, y + 1, w - 2, h - 2, fill)
+    rect(d, x + 2, y + 2, w - 4, h - 4, inner)
 
 
-def divider() -> None:
-    w, h, s = 800, 20, 4
-    img = Image.new("RGB", (w, h), (13, 17, 23))
-    d = ImageDraw.Draw(img)
-    for x in range(w // s):
-        px(d, x, 0, s, GRASS)
-        px(d, x, 1, s, GRASS_D)
-        for y in range(2, 5):
-            px(d, x, y, s, BRICK if (x + y) % 2 == 0 else BRICK_D)
-    img.save(os.path.join(OUT, "divider.png"), optimize=True)
+# ---- assets ----------------------------------------------------------------
+def banner():
+    S = 4
+    W, H = 240, 78
+    img, d = new_scene(W, H)
+    sky_gradient(d, W, H)
+    cloud(d, 14, 8)
+    cloud(d, 96, 5)
+    cloud(d, 180, 11)
+    hill(d, 50, 60, 20)
+    hill(d, 200, 60, 16)
+    gtop = 60
+    ground(d, W, gtop, H - gtop)
+    bush(d, 120, gtop)
+    bush(d, 158, gtop)
+    qblock(d, 30, 26)
+    brick(d, 38, 26)
+    qblock(d, 46, 26)
+    for i, cx in enumerate((33, 41, 49)):
+        coin(d, cx + 1, 16)
+    pipe(d, 214, gtop)
+    flag(d, 196, gtop)
+    hero(d, 14, gtop)
+    big = upscale(img, S)
+
+    # text sign panel drawn crisp at full res
+    tl, td = text_layer(W * S, H * S)
+    # panel box
+    px0, py0, px1, py1 = 78 * S, 16 * S, 196 * S, 50 * S
+    td.rectangle([px0 - 6, py0 - 6, px1 + 6, py1 + 6], fill=(245, 247, 252, 255))
+    td.rectangle([px0 - 3, py0 - 3, px1 + 3, py1 + 3], fill=(22, 22, 42, 255))
+    td.rectangle([px0, py0, px1, py1], fill=(14, 14, 30, 255))
+    cx = (px0 + px1) // 2
+    draw_text(td, (cx, py0 + 16 * 1.0), "SOHAM", GOLD, 30, anchor="mm", shadow=(0, 0, 0, 180))
+    draw_text(td, (cx, py0 + 52), "AGGARWAL", GOLD, 30, anchor="mm", shadow=(0, 0, 0, 180))
+    draw_text(td, (cx, py1 - 16), "MARKETS // RISK // SYSTEMS", WHITE, 11, anchor="mm")
+
+    out = Image.alpha_composite(big.convert("RGBA"), tl).convert("RGB")
+    out.save(os.path.join(OUT, "banner.png"), optimize=True)
 
 
-def level_nse() -> None:
-    w, h = 420, 100
-    img = Image.new("RGB", (w, h), BLACK)
-    d = ImageDraw.Draw(img)
-    d.rectangle([0, 0, w - 1, h - 1], outline=GOLD, width=3)
-    draw_brick(d, 3, 3, 4)
-    d.text((18, 38), "1-1", fill=GOLD, font=font(10))
-    d.text((64, 22), "WORLD 1-1 | NSE CLEARING", fill=GOLD, font=font(18))
-    d.text((64, 48), "Risk intern | max-flow collateral | 1M+ accounts", fill=(170, 170, 170), font=font(11))
-    d.text((64, 68), "Dinic max-flow | graph pruning | Sharpe & Jensen's a", fill=WHITE, font=font(11))
-    img.save(os.path.join(OUT, "level-nse.png"), optimize=True)
+def header(filename, label, accent, icon):
+    """Slim section header bar: icon tile + label on a dark panel."""
+    S = 4
+    W, H = 200, 18
+    img, d = new_scene(W, H, PANEL_LO)
+    rect(d, 0, 0, W, 2, accent)
+    rect(d, 0, H - 2, W, 2, accent)
+    rect(d, 0, 0, 2, H, accent)
+    rect(d, W - 2, 0, 2, H, accent)
+    # icon tile
+    rect(d, 8, 4, 10, 10, accent)
+    rect(d, 9, 5, 8, 8, PANEL)
+    big = upscale(img, S)
+    tl, td = text_layer(W * S, H * S)
+    draw_text(td, (14 * S, H * S // 2), icon, WHITE, 13, anchor="mm")
+    draw_text(td, (26 * S, H * S // 2), label, accent, 15, anchor="lm")
+    out = Image.alpha_composite(big.convert("RGBA"), tl).convert("RGB")
+    out.save(os.path.join(OUT, filename), optimize=True)
 
 
-def level_lob() -> None:
-    w, h = 420, 100
-    img = Image.new("RGB", (w, h), BLACK)
-    d = ImageDraw.Draw(img)
-    d.rectangle([0, 0, w - 1, h - 1], outline=BLUE, width=3)
-    d.rectangle([12, 12, 52, 52], fill=BLUE)
-    d.text((20, 38), "1-2", fill=WHITE, font=font(10))
-    d.text((64, 22), "WORLD 1-2 | LOB FORECAST", fill=BLUE, font=font(18))
-    d.text((64, 48), "Limit order book | microstructure | FI-2010", fill=(170, 170, 170), font=font(11))
-    d.text((64, 68), "Spread | queue imbalance | microprice -> 0.841 F1 @ h3", fill=WHITE, font=font(11))
-    img.save(os.path.join(OUT, "level-lob.png"), optimize=True)
+def card(filename, accent, tag, title, line1, line2, icon):
+    S = 4
+    W, H = 116, 30
+    img, d = new_scene(W, H, PANEL_LO)
+    rect(d, 0, 0, W, H, accent)
+    rect(d, 1, 1, W - 2, H - 2, PANEL)
+    rect(d, 2, 2, W - 4, H - 4, PANEL_LO)
+    # icon tile
+    rect(d, 5, 6, 18, 18, accent)
+    rect(d, 6, 7, 16, 16, PANEL)
+    big = upscale(img, S)
+    tl, td = text_layer(W * S, H * S)
+    draw_text(td, (14 * S, 15 * S), icon, WHITE, 18, anchor="mm")
+    draw_text(td, (28 * S, 7 * S), tag, accent, 9, anchor="lm")
+    draw_text(td, (28 * S, 14 * S), title, WHITE, 13, anchor="lm")
+    draw_text(td, (28 * S, 21 * S), line1, GREY, 8, anchor="lm")
+    draw_text(td, (28 * S, 26 * S), line2, GREY, 8, anchor="lm")
+    out = Image.alpha_composite(big.convert("RGBA"), tl).convert("RGB")
+    out.save(os.path.join(OUT, filename), optimize=True)
 
 
-def level_secret() -> None:
-    w, h = 420, 100
-    img = Image.new("RGB", (w, h), BLACK)
-    d = ImageDraw.Draw(img)
-    d.rectangle([0, 0, w - 1, h - 1], outline=PURPLE, width=3)
-    d.rectangle([12, 12, 52, 52], fill=PURPLE)
-    d.text((16, 38), "???", fill=GOLD, font=font(10))
-    d.text((64, 22), "SECRET WORLDS", fill=PURPLE, font=font(18))
-    d.text((64, 48), "Side quests | smaller builds | still fun", fill=(170, 170, 170), font=font(11))
-    d.text((64, 68), "Codebase RAG | CPOS | more on GitHub", fill=WHITE, font=font(11))
-    d.rectangle([360, 48, 384, 88], fill=GRASS)
-    d.rectangle([356, 44, 388, 56], fill=(80, 208, 80))
-    img.save(os.path.join(OUT, "level-secret.png"), optimize=True)
+def typing():
+    S = 4
+    W, H = 200, 40
+    img, d = new_scene(W, H, PANEL_LO)
+    rect(d, 0, 0, W, 2, GOLD)
+    rect(d, 0, H - 2, W, 2, COIN_D)
+    rect(d, 0, 0, 2, H, GOLD)
+    rect(d, W - 2, 0, 2, H, GOLD)
+    for i, c in enumerate((GOLD, BLUE, GREEN, RED)):
+        coin(d, 6 + i * 6, 6)
+    big = upscale(img, S)
+    tl, td = text_layer(W * S, H * S)
+    draw_text(td, (W * S // 2, 6 * S), "HIGH SCORES", GOLD, 12, anchor="mm")
+    rows = [("15s", 193, GOLD), ("60s", 155, BLUE), ("120s", 141, GREEN), ("10w", 217, RED)]
+    colx = [14, 110]
+    maxw = 70 * S
+    for i, (lab, val, col) in enumerate(rows):
+        col_i = i // 2
+        row_i = i % 2
+        bx = colx[col_i] * S
+        by = (15 + row_i * 9) * S
+        draw_text(td, (bx, by + 3 * S), lab, GREY, 8, anchor="lm")
+        bar_x = bx + 22 * S
+        bar_w = int((val / 217) * (maxw - 24 * S))
+        td.rectangle([bar_x, by, bar_x + bar_w, by + 6 * S], fill=col + (255,))
+        draw_text(td, (bar_x + bar_w + 4, by + 3 * S), str(val), col, 9, anchor="lm")
+    draw_text(td, (W * S // 2, (H - 4) * S), "3,435 TESTS  //  TOP 0.44% WORLDWIDE", GREY, 7, anchor="mm")
+    out = Image.alpha_composite(big.convert("RGBA"), tl).convert("RGB")
+    out.save(os.path.join(OUT, "typing.png"), optimize=True)
 
 
-def typing_card() -> None:
-    w, h = 720, 120
-    img = Image.new("RGB", (w, h), (13, 17, 23))
-    d = ImageDraw.Draw(img)
-    d.rectangle([0, 0, w - 1, h - 1], outline=GOLD, width=3)
-    d.text((360, 22), "> HIGH SCORE TABLE <", fill=GOLD, font=font(14), anchor="mm")
-    d.text((360, 48), "FASTESTTYPIST5", fill=WHITE, font=font(22), anchor="mm")
-    bars = [
-        (40, 66, "15s", 193, GOLD),
-        (40, 86, "60s", 155, BLUE),
-        (380, 66, "120s", 141, GRASS),
-        (380, 86, "10w", 217, RED),
-    ]
-    for colx, y, lab, val, col in bars:
-        d.text((colx, y + 12), lab, fill=(136, 136, 136), font=font(11))
-        d.rectangle([colx + 40, y, colx + 40 + val, y + 16], fill=col)
-        d.text((colx + 40 + val + 12, y + 12), str(val), fill=col, font=font(12))
-    d.text(
-        (360, 108),
-        "3,435 tests | top 0.44% worldwide | monkeytype.com/profile/FastestTypist5",
-        fill=(102, 102, 102),
-        font=font(10),
-        anchor="mm",
-    )
-    img.save(os.path.join(OUT, "typing.png"), optimize=True)
+def trophy():
+    S = 4
+    W, H = 200, 22
+    img, d = new_scene(W, H, PANEL_LO)
+    rect(d, 0, 0, W, 2, GOLD)
+    rect(d, 0, H - 2, W, 2, COIN_D)
+    big = upscale(img, S)
+    tl, td = text_layer(W * S, H * S)
+    draw_text(td, (W * S // 2, 6 * S), "ACHIEVEMENTS UNLOCKED", GOLD, 10, anchor="mm")
+    draw_text(td, (W * S // 2, 13 * S), "BadgerAI 1st  //  Cursor Hacks 1st  //  UW Blockchain 2nd", WHITE, 7, anchor="mm")
+    draw_text(td, (W * S // 2, 18 * S), "2x AIME  //  IOQM top 10%  //  published ML research", GREY, 7, anchor="mm")
+    out = Image.alpha_composite(big.convert("RGBA"), tl).convert("RGB")
+    out.save(os.path.join(OUT, "trophy.png"), optimize=True)
 
 
-def trophy() -> None:
-    w, h = 720, 72
-    img = Image.new("RGB", (w, h), BLACK)
-    d = ImageDraw.Draw(img)
-    d.rectangle([0, 0, w - 1, h - 1], outline=GOLD, width=2)
-    d.text((360, 18), "ACHIEVEMENTS UNLOCKED", fill=GOLD, font=font(13), anchor="mm")
-    d.text((360, 38), "BadgerAI '26 1st | Cursor Hacks '26 1st | UW Blockchain '25 2nd", fill=WHITE, font=font(11), anchor="mm")
-    d.text(
-        (360, 58),
-        "2x AIME | IOQM top 10% | published ML research | ex tech lead Neuro86 @ MIT Media Lab",
-        fill=(170, 170, 170),
-        font=font(11),
-        anchor="mm",
-    )
-    img.save(os.path.join(OUT, "trophy.png"), optimize=True)
+def divider():
+    S = 4
+    W, H = 200, 6
+    img, d = new_scene(W, H, (13, 17, 23))
+    rect(d, 0, 0, W, 2, GRASS)
+    rect(d, 0, 2, W, 1, GRASS_D)
+    for x in range(W):
+        d.point((x, 3), fill=BRICK if x % 2 == 0 else BRICK_D)
+        d.point((x, 4), fill=BRICK_D if x % 2 == 0 else BRICK)
+    upscale(img, S).save(os.path.join(OUT, "divider.png"), optimize=True)
 
 
-def main() -> None:
+def main():
     os.makedirs(OUT, exist_ok=True)
     banner()
-    hud()
-    divider()
-    level_nse()
-    level_lob()
-    level_secret()
-    typing_card()
+    header("hdr-about.png", "PLAYER PROFILE", GOLD, "@")
+    header("hdr-quests.png", "MAIN QUESTS", RED, "!")
+    header("hdr-projects.png", "SIDE QUESTS", PURPLE, "*")
+    header("hdr-scores.png", "HIGH SCORES", BLUE, "#")
+    header("hdr-inventory.png", "INVENTORY", GREEN, "+")
+    header("hdr-trophies.png", "TROPHIES", GOLD, "^")
+    card("card-nse.png", RED, "WORLD 1-1", "NSE CLEARING", "Risk intern - max-flow collateral", "1M+ accounts - Sharpe & Jensen alpha", "$")
+    card("card-lob.png", BLUE, "WORLD 1-2", "LOB FORECAST", "Market microstructure - FI-2010", "queue imbalance -> 0.841 F1 @ h3", "~")
+    card("card-rag.png", PURPLE, "BONUS", "CODEBASE RAG", "Chat with any repo", "embeddings + cosine + LLM", "?")
+    card("card-cpos.png", GREEN, "BONUS", "CPOS", "Competitive programming TUI", "side project", ">")
+    typing()
     trophy()
+    divider()
     for name in sorted(os.listdir(OUT)):
         if name.endswith(".png"):
-            path = os.path.join(OUT, name)
-            with Image.open(path) as im:
-                print(f"{name}: {im.size[0]}x{im.size[1]} ({os.path.getsize(path) // 1024}K)")
+            p = os.path.join(OUT, name)
+            with Image.open(p) as im:
+                print(f"{name}: {im.size[0]}x{im.size[1]} ({os.path.getsize(p)//1024}K)")
 
 
 if __name__ == "__main__":
