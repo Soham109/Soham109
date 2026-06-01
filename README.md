@@ -4,7 +4,7 @@
 
 **CS & Math · UW–Madison · '28**
 
-<sub>systems · ML · full-stack · competitive programming</sub>
+<sub>markets · risk · systems · ML · competitive programming</sub>
 
 <br/>
 
@@ -22,21 +22,52 @@
 
 <br/>
 
-I build software that makes annoying workflows feel effortless — terminal tools, browser extensions, ML pipelines, and the occasional hackathon project that wins when it probably shouldn't.
+CS + Math student who builds at the intersection of **markets** and **software** — risk engines, microstructure models, and tools that make hard workflows disappear.
 
-Currently at **NSE Clearing** (risk & margin systems) and shipping **CPOS**. Previously tech lead on **Neuro86** at MIT Media Lab.
+**NSE Clearing** (risk intern) by day. **CPOS** and side projects by night. Previously tech lead on **Neuro86** at MIT Media Lab.
 
 <br/>
 
 ### Now
 
+- **NSE Clearing** — max-flow collateral optimization, margin recompute, portfolio risk & backtests
 - **CPOS** — competitive programming OS · terminal + VS Code + Chrome
-- **NSE Clearing** — collateral optimization, max-flow engines, portfolio risk
-- **School** — CS & Math @ UW–Madison · Dean's List · 3.96 GPA
+- **School** — probability, linear algebra, algorithms · Dean's List · 3.96 GPA
 
 <br/>
 
-## Projects
+## Markets & risk
+
+<table border="0" cellspacing="0" cellpadding="16">
+<tr>
+<td width="50%" valign="top">
+
+### [LOB Forecasting](https://github.com/Soham109/limit-order-book-forecasting)
+
+Short-horizon **limit order book** forecasting using microstructure features — spread, queue imbalance, microprice, depth pressure, and volatility signals.
+
+Mid-price classifiers across **FI-2010** horizons · **0.841** macro F1 at h3.
+
+<sub>Python · scikit-learn · market microstructure</sub>
+
+</td>
+<td width="50%" valign="top">
+
+### NSE Clearing · Risk
+
+Collateral optimization for **1M+ client accounts** — Dinic max-flow over sparse ownership graphs, with graph pruning that cuts active nodes ~70% before each recompute.
+
+Portfolio analytics: efficient frontiers, rolling backtests, Sharpe & Jensen's alpha.
+
+<sub>Python · graph algorithms · risk systems · intern</sub>
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+## Software
 
 <table border="0" cellspacing="0" cellpadding="16">
 <tr>
@@ -71,19 +102,7 @@ Chat with any GitHub repo — embed the codebase, cosine search, LLM answers.
 
 [Frontend](https://github.com/Soham109/codebase-rag-frontend) · [Backend](https://github.com/Soham109/Codebase-RAG-Backend)
 
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### [LOB Forecasting](https://github.com/Soham109/limit-order-book-forecasting)
-
-Limit order book microstructure → mid-price classifiers across FI-2010 horizons.
-
-**0.841** macro F1 at horizon 3 · Python · scikit-learn
-
-</td>
-<td width="50%" valign="top">
+<br/><br/>
 
 ### [Cursor Hacks '26](https://github.com/Soham109/claudehacks2026)
 
@@ -114,6 +133,8 @@ Limit order book microstructure → mid-price classifiers across FI-2010 horizon
   <img src="https://skillicons.dev/icons?i=python,rust,cpp,ts,react,nextjs,fastapi,postgres,docker,linux,git,vscode&perline=12" alt="Tech stack"/>
 </p>
 
+<p align="center"><sub>Python for ML & risk · Rust/C++ for systems · TypeScript for product</sub></p>
+
 <br/>
 
 ## Elsewhere
@@ -129,6 +150,6 @@ Limit order book microstructure → mid-price classifiers across FI-2010 horizon
 
 <div align="center">
 
-*Building something weird and useful? I'd love to hear about it.*
+*Building something weird and useful — markets, tools, or both? I'd love to hear about it.*
 
 </div>
