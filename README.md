@@ -1,131 +1,146 @@
-<h1 align="center">Soham Aggarwal</h1>
-<p align="center">
-  <strong>CS & Math @ UW–Madison</strong> · building tools that feel obvious in hindsight
-</p>
+<div align="center">
 
-<p align="center">
-  <a href="https://sohamaggarwal.com"><img src="https://img.shields.io/badge/Portfolio-sohamaggarwal.com-6366f1?style=flat-square&logo=googlechrome&logoColor=white" alt="Portfolio"/></a>
-  <a href="https://www.linkedin.com/in/soham-aggarwal5/"><img src="https://img.shields.io/badge/LinkedIn-soham--aggarwal5-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-  <a href="mailto:saggarwal44@wisc.edu"><img src="https://img.shields.io/badge/Email-saggarwal44@wisc.edu-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email"/></a>
-  <a href="https://monkeytype.com/profile/FastestTypist5"><img src="https://img.shields.io/badge/⌨️_Monkeytype-FastestTypist5-e2b714?style=flat-square" alt="Monkeytype"/></a>
-</p>
+# Soham Aggarwal
 
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=16&duration=3200&pause=1200&color=94A3B8&center=true&vCenter=true&width=520&lines=terminal+UIs+%7C+browser+extensions+%7C+ML+pipelines;competitive+programming+%E2%86%92+operating+systems;3am+hackathon+prototypes+that+accidentally+win" alt="Typing animation"/>
-</p>
-
----
-
-### about
-
-hey — i'm **soham**. i ship things across **systems**, **ML**, and **full-stack** — whatever makes a hard workflow feel effortless.
-
-currently: **CPOS**, risk/systems @ **NSE Clearing**, web analytics @ **UW InterPro**, ex tech lead @ **MIT Media Lab (Neuro86)**.
-
-when i'm not coding: competitive programming, speed typing, or optimizing something that was already fast enough.
+**CS & Math · UW–Madison · '28**
 
 <br/>
 
-**now**
-```
-▸ CPOS — browse Codeforces in your terminal, not in 47 browser tabs
-▸ margin & collateral engines @ NSE Clearing
-▸ SEO + analytics for InterPro's 200+ page site
-```
+<a href="https://sohamaggarwal.com"><img src="https://img.icons8.com/fluency/48/domain.png" width="40" height="40" alt="Website"/></a>
+&nbsp;&nbsp;
+<a href="https://www.linkedin.com/in/soham-aggarwal5/"><img src="https://img.icons8.com/fluency/48/linkedin.png" width="40" height="40" alt="LinkedIn"/></a>
+&nbsp;&nbsp;
+<a href="mailto:saggarwal44@wisc.edu"><img src="https://img.icons8.com/fluency/48/new-post.png" width="40" height="40" alt="Email"/></a>
+&nbsp;&nbsp;
+<a href="https://github.com/Soham109"><img src="https://img.icons8.com/fluency/48/github.png" width="40" height="40" alt="GitHub"/></a>
+&nbsp;&nbsp;
+<a href="https://monkeytype.com/profile/FastestTypist5"><img src="https://img.icons8.com/fluency/48/keyboard.png" width="40" height="40" alt="Monkeytype"/></a>
 
----
+</div>
 
-### featured
+<br/>
+
+I build software across **systems**, **ML**, and **full-stack** — usually things that remove friction from workflows that shouldn't be annoying in the first place.
+
+Right now that's **CPOS**, risk & systems work at **NSE Clearing**, web analytics at **UW InterPro**, and previously tech lead on **Neuro86** at MIT Media Lab.
+
+<br/>
+
+## Working on
+
+| | |
+| :-- | :-- |
+| **CPOS** | Competitive programming OS — terminal, VS Code, browser companion |
+| **NSE Clearing** | Margin engines, max-flow collateral optimization |
+| **InterPro** | SEO & analytics across 200+ pages |
+| **Side quests** | Hackathons, typing, competitive programming |
+
+<br/>
+
+## Projects
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-#### [`CPOS`](https://github.com/Soham109/cpos)
-**Rust · TUI · VS Code · Chrome**
+### [CPOS](https://github.com/Soham109/cpos)
 
-Competitive programming OS — capture samples, run tests, submit, track rating, get recommendations. All local.
+Browse Codeforces in your terminal. Capture samples, run tests, submit, track rating — all local.
+
+Rust · TUI · VS Code · Chrome
 
 <br/>
-<a href="https://cpos.sohamaggarwal.com"><img src="https://img.shields.io/badge/↗_website-cpos.sohamaggarwal.com-8b5cf6?style=flat-square" alt="CPOS website"/></a>
-<a href="https://marketplace.visualstudio.com/items?itemName=sohamaggarwal.cpos-vscode"><img src="https://img.shields.io/badge/↗_VS_Code-Marketplace-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white" alt="VS Code"/></a>
-<a href="https://chromewebstore.google.com/detail/gjnbapmjonegeeamdeahcoojgokeogmm"><img src="https://img.shields.io/badge/↗_Chrome-Web_Store-4285F4?style=flat-square&logo=googlechrome&logoColor=white" alt="Chrome"/></a>
+
+[Website](https://cpos.sohamaggarwal.com) · [VS Code](https://marketplace.visualstudio.com/items?itemName=sohamaggarwal.cpos-vscode) · [Chrome](https://chromewebstore.google.com/detail/gjnbapmjonegeeamdeahcoojgokeogmm)
 
 </td>
 <td width="50%" valign="top">
 
-#### [`Codebase RAG`](https://github.com/Soham109/Codebase-RAG-Backend)
-**FastAPI · Pinecone · Next.js**
+### [Codebase RAG](https://github.com/Soham109/Codebase-RAG-Backend)
 
-Chat with any GitHub repo — embed the codebase, cosine search, LLM-powered answers.
+Chat with any GitHub repo. Embed code, search by cosine similarity, answer with an LLM.
+
+FastAPI · Pinecone · Next.js
 
 <br/>
-<a href="https://github.com/Soham109/codebase-rag-frontend"><img src="https://img.shields.io/badge/↗_frontend-repo-181717?style=flat-square&logo=github&logoColor=white" alt="frontend"/></a>
-<a href="https://github.com/Soham109/Codebase-RAG-Backend"><img src="https://img.shields.io/badge/↗_backend-repo-181717?style=flat-square&logo=github&logoColor=white" alt="backend"/></a>
+
+[Frontend](https://github.com/Soham109/codebase-rag-frontend) · [Backend](https://github.com/Soham109/Codebase-RAG-Backend)
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-#### [`LOB Forecasting`](https://github.com/Soham109/limit-order-book-forecasting)
-**Python · sklearn**
+### [LOB Forecasting](https://github.com/Soham109/limit-order-book-forecasting)
 
-Microstructure signals → mid-price classifiers. **0.841** macro F1 at horizon 3.
+Limit order book microstructure signals → mid-price classifiers. **0.841** macro F1 at h3.
+
+Python · scikit-learn
 
 </td>
 <td width="50%" valign="top">
 
-#### [`Cursor Hacks '26`](https://github.com/Soham109/claudehacks2026)
-**🏆 1st place**
+### [Cursor Hacks '26](https://github.com/Soham109/claudehacks2026)
 
-Built at 2am. Somehow worked on demo day.
+**1st place** — built at 2am, worked on demo day.
 
 </td>
 </tr>
 </table>
 
----
+<br/>
 
-### ⌨️ monkeytype · [`FastestTypist5`](https://monkeytype.com/profile/FastestTypist5)
+## Typing · [FastestTypist5](https://monkeytype.com/profile/FastestTypist5)
 
 <table align="center">
 <tr>
-<td align="center"><b>15 sec PB</b><br/><code>193 WPM</code><br/><sub>99.6% acc</sub></td>
-<td align="center"><b>60 sec PB</b><br/><code>155 WPM</code><br/><sub>96.1% acc</sub></td>
-<td align="center"><b>120 sec PB</b><br/><code>141 WPM</code><br/><sub>95.6% acc</sub></td>
-<td align="center"><b>10 words PB</b><br/><code>217 WPM</code><br/><sub>peak burst</sub></td>
+<th></th>
+<th align="center">15 sec</th>
+<th align="center">60 sec</th>
+<th align="center">120 sec</th>
+<th align="center">10 words</th>
 </tr>
 <tr>
-<td align="center" colspan="4"><sub>3,435 tests · 25+ hours typed · top 0.44% worldwide</sub></td>
+<td align="right"><b>WPM</b></td>
+<td align="center">193</td>
+<td align="center">155</td>
+<td align="center">141</td>
+<td align="center">217</td>
+</tr>
+<tr>
+<td align="right"><b>Accuracy</b></td>
+<td align="center">99.6%</td>
+<td align="center">96.1%</td>
+<td align="center">95.6%</td>
+<td align="center">—</td>
 </tr>
 </table>
 
----
+<p align="center"><sub>3,435 tests completed · 25+ hours on Monkeytype · top 0.44% worldwide</sub></p>
 
-### stack
+<br/>
+
+## Stack
 
 <p align="center">
-  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=python,rust,cpp,ts,react,nextjs,fastapi,postgres,docker,linux,git,vscode&perline=12" alt="Tech stack"/></a>
+  <img src="https://skillicons.dev/icons?i=python,rust,cpp,ts,react,nextjs,fastapi,postgres,docker,linux,git,vscode&perline=12" alt="Python, Rust, C++, TypeScript, React, Next.js, FastAPI, PostgreSQL, Docker, Linux, Git, VS Code"/>
 </p>
 
----
+<br/>
 
-### highlights
+## Elsewhere
 
 | | |
-| :--- | :--- |
-| 🏆 | **1st** — Cursor Hacks '26 · BadgerAI '26 |
-| 🥈 | **2nd** — UW Blockchain Hackathon '25 |
-| 🎯 | **2× AIME** · IOQM national top 10% |
-| 📈 | Published ML research · Dean's List · **3.96 GPA** |
+| :-- | :-- |
+| 🏆 | 1st — Cursor Hacks '26 · BadgerAI '26 |
+| 🥈 | 2nd — UW Blockchain Hackathon '25 |
+| 🎯 | 2× AIME · IOQM national top 10% |
+| 📈 | Published ML research · Dean's List · 3.96 GPA |
 
----
+<br/>
 
-<p align="center">
-  <i>if you're building something weird and useful, i probably want to hear about it.</i>
-</p>
+<div align="center">
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=Soham109&color=6366f1&style=flat-square&label=profile+views" alt="Profile views"/>
-</p>
+*Building something weird and useful? I'd love to hear about it.*
+
+</div>
