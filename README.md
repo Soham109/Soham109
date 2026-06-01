@@ -28,10 +28,10 @@
 
 **CS & Math @ UW–Madison**
 
-I am currently exploring **quantitative finance** and **systems software** — margin engines, market microstructure, and ML pipelines. Currently a **Risk intern @ NSE Clearing**; previously tech lead of **Neuro86 @ MIT Media Lab**. I build the side quests too, whenever a problem refuses to leave my head.
+I am exploring **quantitative finance** and **systems software**. Currently a **Risk intern @ NSE Clearing**; previously tech lead of **Neuro86 @ MIT Media Lab**. I build the side quests too, whenever a problem refuses to leave my head.
 
 <br/>
 
-**[sohamaggarwal.com](https://sohamaggarwal.com)** · open to interesting work in markets & software · `INSERT COIN TO CONTINUE`
+**[sohamaggarwal.com](https://sohamaggarwal.com)** · open to interesting work in finance & software · `INSERT COIN TO CONTINUE`
 
 </div>
