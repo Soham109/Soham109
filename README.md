@@ -32,12 +32,6 @@ I am currently exploring **quantitative finance** and **systems software** — m
 
 <br/>
 
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/hdr-quests.png" width="800" alt="Main Quests"/>
-
-<br/><br/>
-
 **[sohamaggarwal.com](https://sohamaggarwal.com)** · open to interesting work in markets & software · `INSERT COIN TO CONTINUE`
 
 </div>
