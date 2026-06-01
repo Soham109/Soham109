@@ -4,50 +4,55 @@
 
 **CS & Math · UW–Madison · '28**
 
+<sub>systems · ML · full-stack · competitive programming</sub>
+
 <br/>
 
-<a href="https://sohamaggarwal.com"><img src="https://img.icons8.com/fluency/48/domain.png" width="40" height="40" alt="Website"/></a>
+<a href="https://sohamaggarwal.com"><img src="https://img.icons8.com/fluency/48/domain.png" width="38" height="38" alt="Website"/></a>
 &nbsp;&nbsp;
-<a href="https://www.linkedin.com/in/soham-aggarwal5/"><img src="https://img.icons8.com/fluency/48/linkedin.png" width="40" height="40" alt="LinkedIn"/></a>
+<a href="https://www.linkedin.com/in/soham-aggarwal5/"><img src="https://img.icons8.com/fluency/48/linkedin.png" width="38" height="38" alt="LinkedIn"/></a>
 &nbsp;&nbsp;
-<a href="mailto:saggarwal44@wisc.edu"><img src="https://img.icons8.com/fluency/48/new-post.png" width="40" height="40" alt="Email"/></a>
+<a href="mailto:saggarwal44@wisc.edu"><img src="https://img.icons8.com/fluency/48/new-post.png" width="38" height="38" alt="Email"/></a>
 &nbsp;&nbsp;
-<a href="https://github.com/Soham109"><img src="https://img.icons8.com/fluency/48/github.png" width="40" height="40" alt="GitHub"/></a>
+<a href="https://github.com/Soham109"><img src="https://img.icons8.com/fluency/48/github.png" width="38" height="38" alt="GitHub"/></a>
 &nbsp;&nbsp;
-<a href="https://monkeytype.com/profile/FastestTypist5"><img src="https://img.icons8.com/fluency/48/keyboard.png" width="40" height="40" alt="Monkeytype"/></a>
+<a href="https://monkeytype.com/profile/FastestTypist5"><img src="https://img.icons8.com/fluency/48/keyboard.png" width="38" height="38" alt="Monkeytype"/></a>
 
 </div>
 
 <br/>
 
-I build software across **systems**, **ML**, and **full-stack** — usually things that remove friction from workflows that shouldn't be annoying in the first place.
+I build software that makes annoying workflows feel effortless — terminal tools, browser extensions, ML pipelines, and the occasional hackathon project that wins when it probably shouldn't.
 
-Right now that's **CPOS**, risk & systems work at **NSE Clearing**, web analytics at **UW InterPro**, and previously tech lead on **Neuro86** at MIT Media Lab.
+Currently at **NSE Clearing** (risk & margin systems) and shipping **CPOS**. Previously tech lead on **Neuro86** at MIT Media Lab.
 
 <br/>
 
-## Working on
+### Now
 
-| | |
-| :-- | :-- |
-| **CPOS** | Competitive programming OS — terminal, VS Code, browser companion |
-| **NSE Clearing** | Margin engines, max-flow collateral optimization |
-| **InterPro** | SEO & analytics across 200+ pages |
-| **Side quests** | Hackathons, typing, competitive programming |
+- **CPOS** — competitive programming OS · terminal + VS Code + Chrome
+- **NSE Clearing** — collateral optimization, max-flow engines, portfolio risk
+- **School** — CS & Math @ UW–Madison · Dean's List · 3.96 GPA
 
 <br/>
 
 ## Projects
 
-<table>
+<table border="0" cellspacing="0" cellpadding="16">
 <tr>
 <td width="50%" valign="top">
 
+<a href="https://github.com/Soham109/cpos">
+  <img src="https://raw.githubusercontent.com/Soham109/cpos/main/docs/img/dashboard.webp" alt="CPOS dashboard" width="100%"/>
+</a>
+
+<br/>
+
 ### [CPOS](https://github.com/Soham109/cpos)
 
-Browse Codeforces in your terminal. Capture samples, run tests, submit, track rating — all local.
+Browse Codeforces in your terminal — capture samples, run tests, submit, track rating. All local.
 
-Rust · TUI · VS Code · Chrome
+<sub>Rust · TUI · VS Code · Chrome</sub>
 
 <br/>
 
@@ -58,9 +63,9 @@ Rust · TUI · VS Code · Chrome
 
 ### [Codebase RAG](https://github.com/Soham109/Codebase-RAG-Backend)
 
-Chat with any GitHub repo. Embed code, search by cosine similarity, answer with an LLM.
+Chat with any GitHub repo — embed the codebase, cosine search, LLM answers.
 
-FastAPI · Pinecone · Next.js
+<sub>FastAPI · Pinecone · Next.js</sub>
 
 <br/>
 
@@ -73,9 +78,9 @@ FastAPI · Pinecone · Next.js
 
 ### [LOB Forecasting](https://github.com/Soham109/limit-order-book-forecasting)
 
-Limit order book microstructure signals → mid-price classifiers. **0.841** macro F1 at h3.
+Limit order book microstructure → mid-price classifiers across FI-2010 horizons.
 
-Python · scikit-learn
+**0.841** macro F1 at horizon 3 · Python · scikit-learn
 
 </td>
 <td width="50%" valign="top">
@@ -92,50 +97,33 @@ Python · scikit-learn
 
 ## Typing · [FastestTypist5](https://monkeytype.com/profile/FastestTypist5)
 
-<table align="center">
-<tr>
-<th></th>
-<th align="center">15 sec</th>
-<th align="center">60 sec</th>
-<th align="center">120 sec</th>
-<th align="center">10 words</th>
-</tr>
-<tr>
-<td align="right"><b>WPM</b></td>
-<td align="center">193</td>
-<td align="center">155</td>
-<td align="center">141</td>
-<td align="center">217</td>
-</tr>
-<tr>
-<td align="right"><b>Accuracy</b></td>
-<td align="center">99.6%</td>
-<td align="center">96.1%</td>
-<td align="center">95.6%</td>
-<td align="center">—</td>
-</tr>
-</table>
+<p align="center">
+  <b>193</b> WPM · 15 sec &nbsp;&nbsp;|&nbsp;&nbsp;
+  <b>155</b> WPM · 60 sec &nbsp;&nbsp;|&nbsp;&nbsp;
+  <b>141</b> WPM · 120 sec &nbsp;&nbsp;|&nbsp;&nbsp;
+  <b>217</b> WPM · 10 words
+</p>
 
-<p align="center"><sub>3,435 tests completed · 25+ hours on Monkeytype · top 0.44% worldwide</sub></p>
+<p align="center"><sub>3,435 tests · 25+ hours typed · top 0.44% worldwide</sub></p>
 
 <br/>
 
 ## Stack
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,rust,cpp,ts,react,nextjs,fastapi,postgres,docker,linux,git,vscode&perline=12" alt="Python, Rust, C++, TypeScript, React, Next.js, FastAPI, PostgreSQL, Docker, Linux, Git, VS Code"/>
+  <img src="https://skillicons.dev/icons?i=python,rust,cpp,ts,react,nextjs,fastapi,postgres,docker,linux,git,vscode&perline=12" alt="Tech stack"/>
 </p>
 
 <br/>
 
 ## Elsewhere
 
-| | |
-| :-- | :-- |
-| 🏆 | 1st — Cursor Hacks '26 · BadgerAI '26 |
-| 🥈 | 2nd — UW Blockchain Hackathon '25 |
-| 🎯 | 2× AIME · IOQM national top 10% |
-| 📈 | Published ML research · Dean's List · 3.96 GPA |
+<p align="center">
+  🏆 1st — Cursor Hacks '26 · BadgerAI '26 &nbsp;·&nbsp;
+  🥈 2nd — UW Blockchain '25 &nbsp;·&nbsp;
+  🎯 2× AIME · IOQM top 10% &nbsp;·&nbsp;
+  📈 Published ML research
+</p>
 
 <br/>
 
