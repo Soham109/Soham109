@@ -22,43 +22,23 @@
 
 <br/>
 
-CS + Math student working at the intersection of **markets** and **software** — risk engines, microstructure models, and the occasional side project.
-
-**Risk intern @ NSE Clearing.** Previously tech lead on **Neuro86** at MIT Media Lab.
-
-<br/>
-
-### Now
-
-- **NSE Clearing** — max-flow collateral optimization, margin recompute, portfolio risk & backtests
-- **UW–Madison** — probability, linear algebra, algorithms · Dean's List · 3.96 GPA
-
-<br/>
-
-## Markets & risk
-
-<table border="0" cellspacing="0" cellpadding="16">
+<table border="0" cellpadding="0" cellspacing="0">
 <tr>
-<td width="50%" valign="top">
+<td valign="top" width="62%">
 
-### [LOB Forecasting](https://github.com/Soham109/limit-order-book-forecasting)
+I work where **math**, **markets**, and **code** overlap — building risk systems, microstructure models, and whatever side project seems fun that week.
 
-Short-horizon **limit order book** forecasting using microstructure features — spread, queue imbalance, microprice, depth pressure, and volatility signals.
-
-Mid-price classifiers across **FI-2010** horizons · **0.841** macro F1 at h3.
-
-<sub>Python · scikit-learn · market microstructure</sub>
+**Risk intern @ [NSE Clearing](https://www.nseindia.com/)** · previously tech lead on **Neuro86** @ MIT Media Lab.
 
 </td>
-<td width="50%" valign="top">
+<td valign="top" width="38%">
 
-### NSE Clearing · Risk
+**Madison, WI**
 
-Collateral optimization for **1M+ client accounts** — Dinic max-flow over sparse ownership graphs, with graph pruning that cuts active nodes ~70% before each recompute.
+UW–Madison · Dean's List  
+GPA **3.96** · '28
 
-Portfolio analytics: efficient frontiers, rolling backtests, Sharpe & Jensen's alpha.
-
-<sub>Python · graph algorithms · risk systems</sub>
+[Monkeytype ↗](https://monkeytype.com/profile/FastestTypist5) · **193** WPM peak
 
 </td>
 </tr>
@@ -66,76 +46,92 @@ Portfolio analytics: efficient frontiers, rolling backtests, Sharpe & Jensen's a
 
 <br/>
 
-## Side projects
+---
 
-<table border="0" cellspacing="0" cellpadding="16">
+<br/>
+
+### NSE Clearing · risk intern
+
+Collateral optimization across **1M+ accounts** — Dinic max-flow on sparse ownership graphs, with pruning that shrinks the active graph ~**70%** before each margin recompute.
+
+Also: efficient frontiers, rolling backtests, Sharpe & Jensen's alpha on portfolio risk.
+
+<br/>
+
+### [LOB Forecasting ↗](https://github.com/Soham109/limit-order-book-forecasting)
+
+Short-horizon limit order book prediction — spread, queue imbalance, microprice, depth pressure, return & vol signals → mid-price classifiers on **FI-2010**.
+
+**0.841** macro F1 at horizon 3.
+
+<br/>
+
+<details>
+<summary><b>Side projects</b> · click to expand</summary>
+<br/>
+
+**[Codebase RAG ↗](https://github.com/Soham109/Codebase-RAG-Backend)** — chat with any GitHub repo. FastAPI · Pinecone · Next.js
+
+<br/>
+
+**[CPOS ↗](https://github.com/Soham109/cpos)** — terminal side project for competitive programming. Rust · VS Code · Chrome
+
+</details>
+
+<br/>
+
+---
+
+<br/>
+
+<table border="0" cellpadding="12" cellspacing="0" width="100%">
 <tr>
-<td width="33%" valign="top">
+<td align="center" width="25%">
 
-### [Codebase RAG](https://github.com/Soham109/Codebase-RAG-Backend)
-
-Chat with any GitHub repo — embed code, cosine search, LLM answers.
-
-<sub>FastAPI · Pinecone · Next.js</sub>
+**193**  
+<sub>15s WPM</sub>
 
 </td>
-<td width="33%" valign="top">
+<td align="center" width="25%">
 
-### [CPOS](https://github.com/Soham109/cpos)
-
-Side project — terminal tool for competitive programming. Browse problems, run samples, submit.
-
-<sub>Rust · VS Code · Chrome</sub>
+**155**  
+<sub>60s WPM</sub>
 
 </td>
-<td width="33%" valign="top">
+<td align="center" width="25%">
 
-### [Cursor Hacks '26](https://github.com/Soham109/claudehacks2026)
+**141**  
+<sub>120s WPM</sub>
 
-**1st place** — built at 2am, worked on demo day.
+</td>
+<td align="center" width="25%">
+
+**217**  
+<sub>10-word burst</sub>
 
 </td>
 </tr>
 </table>
 
-<br/>
-
-## Typing · [FastestTypist5](https://monkeytype.com/profile/FastestTypist5)
-
-<p align="center">
-  <b>193</b> WPM · 15 sec &nbsp;&nbsp;|&nbsp;&nbsp;
-  <b>155</b> WPM · 60 sec &nbsp;&nbsp;|&nbsp;&nbsp;
-  <b>141</b> WPM · 120 sec &nbsp;&nbsp;|&nbsp;&nbsp;
-  <b>217</b> WPM · 10 words
-</p>
-
-<p align="center"><sub>3,435 tests · 25+ hours typed · top 0.44% worldwide</sub></p>
+<p align="center"><sub><a href="https://monkeytype.com/profile/FastestTypist5">FastestTypist5</a> · 3,435 tests · top 0.44% worldwide</sub></p>
 
 <br/>
-
-## Stack
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=python,rust,cpp,ts,react,nextjs,fastapi,postgres,docker,linux,git,vscode&perline=12" alt="Tech stack"/>
 </p>
 
-<p align="center"><sub>Python for ML & risk · Rust/C++ for systems · TypeScript for product</sub></p>
-
 <br/>
 
-## Elsewhere
-
 <p align="center">
-  🏆 1st — Cursor Hacks '26 · BadgerAI '26 &nbsp;·&nbsp;
-  🥈 2nd — UW Blockchain '25 &nbsp;·&nbsp;
-  🎯 2× AIME · IOQM top 10% &nbsp;·&nbsp;
-  📈 Published ML research
+  Hackathon wins · BadgerAI '26 · Cursor Hacks '26 · UW Blockchain '25<br/>
+  2× AIME · IOQM top 10% · published ML research
 </p>
 
 <br/>
 
 <div align="center">
 
-*Building something in markets or software? I'd love to hear about it.*
+*If you're building in markets or software — say hi.*
 
 </div>
