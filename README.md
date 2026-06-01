@@ -1,85 +1,85 @@
-<div align="center">
+<h1 align="center">Soham Aggarwal</h1>
+<p align="center">
+  <strong>CS & Math @ UW–Madison</strong> · building tools that feel obvious in hindsight
+</p>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1e1b4b,50:4338ca,100:6366f1&height=140&section=header&text=Soham%20Aggarwal&fontSize=48&fontColor=fff&animation=twinkling" width="100%" />
+<p align="center">
+  <a href="https://sohamaggarwal.com"><img src="https://img.shields.io/badge/Portfolio-sohamaggarwal.com-6366f1?style=flat-square&logo=googlechrome&logoColor=white" alt="Portfolio"/></a>
+  <a href="https://www.linkedin.com/in/soham-aggarwal5/"><img src="https://img.shields.io/badge/LinkedIn-soham--aggarwal5-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+  <a href="mailto:saggarwal44@wisc.edu"><img src="https://img.shields.io/badge/Email-saggarwal44@wisc.edu-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email"/></a>
+  <a href="https://monkeytype.com/profile/FastestTypist5"><img src="https://img.shields.io/badge/⌨️_Monkeytype-FastestTypist5-e2b714?style=flat-square" alt="Monkeytype"/></a>
+</p>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=900&color=818CF8&center=true&vCenter=true&multiline=true&width=600&height=80&lines=CS+%26+Math+%40+UW%E2%80%93Madison;building+things+that+shouldn't+need+5+browser+tabs;competitive+programming+%E2%86%92+operating+systems;top+0.44%25+typist+on+the+planet+(yes+really))](https://git.io/typing-svg)
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=16&duration=3200&pause=1200&color=94A3B8&center=true&vCenter=true&width=520&lines=terminal+UIs+%7C+browser+extensions+%7C+ML+pipelines;competitive+programming+%E2%86%92+operating+systems;3am+hackathon+prototypes+that+accidentally+win" alt="Typing animation"/>
+</p>
+
+---
+
+### about
+
+hey — i'm **soham**. i ship things across **systems**, **ML**, and **full-stack** — whatever makes a hard workflow feel effortless.
+
+currently: **CPOS**, risk/systems @ **NSE Clearing**, web analytics @ **UW InterPro**, ex tech lead @ **MIT Media Lab (Neuro86)**.
+
+when i'm not coding: competitive programming, speed typing, or optimizing something that was already fast enough.
 
 <br/>
 
-**Madison, WI** · building in public · [sohamaggarwal.com](https://sohamaggarwal.com)
-
-[![Portfolio](https://img.shields.io/badge/portfolio-sohamaggarwal.com-6366f1?style=for-the-badge&logo=googlechrome&logoColor=white)](https://sohamaggarwal.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/soham-aggarwal5/)
-[![Email](https://img.shields.io/badge/email-saggarwal44@wisc.edu-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:saggarwal44@wisc.edu)
-
-</div>
-
----
-
-### hey — i'm soham
-
-cs + math @ **uw–madison** (’28). i like building tools that feel *obvious in hindsight* — the kind where you try them once and wonder why you ever did it the hard way.
-
-right now that looks like **terminal UIs**, **browser extensions**, **ML pipelines**, and the occasional **3am hackathon prototype** that accidentally wins.
-
-when i'm not shipping: competitive programming, speed typing, or over-optimizing something that was already fast enough.
-
----
-
-### 🛠 currently
-
-```text
-▸ shipping CPOS — browse Codeforces in your terminal, not in 47 browser tabs
-▸ risk + systems work @ NSE Clearing (margin graphs, max-flow, the fun stuff)
-▸ web + SEO analytics @ UW InterPro (200+ pages, GA4, backlinks, chaos)
-▸ led Neuro86 @ MIT Media Lab — patient stories, embeddings, real impact
+**now**
+```
+▸ CPOS — browse Codeforces in your terminal, not in 47 browser tabs
+▸ margin & collateral engines @ NSE Clearing
+▸ SEO + analytics for InterPro's 200+ page site
 ```
 
 ---
 
-### ✨ featured builds
+### featured
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-**[CPOS](https://github.com/Soham109/cpos)** · `Rust · TUI · VS Code · Chrome`
+#### [`CPOS`](https://github.com/Soham109/cpos)
+**Rust · TUI · VS Code · Chrome**
 
-competitive programming operating system — capture samples, run tests, submit, track rating, get recommendations. all local.
+Competitive programming OS — capture samples, run tests, submit, track rating, get recommendations. All local.
 
 <br/>
-
-[![website](https://img.shields.io/badge/website-cpos.sohamaggarwal.com-8b5cf6?style=flat-square)](https://cpos.sohamaggarwal.com)
-[![VS Code](https://img.shields.io/badge/VS_Code-extension-007ACC?style=flat-square&logo=visualstudiocode)](https://marketplace.visualstudio.com/items?itemName=sohamaggarwal.cpos-vscode)
-[![Chrome](https://img.shields.io/badge/Chrome-extension-4285F4?style=flat-square&logo=googlechrome)](https://chromewebstore.google.com/detail/gjnbapmjonegeeamdeahcoojgokeogmm)
+<a href="https://cpos.sohamaggarwal.com"><img src="https://img.shields.io/badge/↗_website-cpos.sohamaggarwal.com-8b5cf6?style=flat-square" alt="CPOS website"/></a>
+<a href="https://marketplace.visualstudio.com/items?itemName=sohamaggarwal.cpos-vscode"><img src="https://img.shields.io/badge/↗_VS_Code-Marketplace-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white" alt="VS Code"/></a>
+<a href="https://chromewebstore.google.com/detail/gjnbapmjonegeeamdeahcoojgokeogmm"><img src="https://img.shields.io/badge/↗_Chrome-Web_Store-4285F4?style=flat-square&logo=googlechrome&logoColor=white" alt="Chrome"/></a>
 
 </td>
 <td width="50%" valign="top">
 
-**[Codebase RAG](https://github.com/Soham109/Codebase-RAG-Backend)** · `FastAPI · Pinecone · Next.js`
+#### [`Codebase RAG`](https://github.com/Soham109/Codebase-RAG-Backend)
+**FastAPI · Pinecone · Next.js**
 
-chat with any github repo — embed the codebase, cosine search, groq-powered answers.
+Chat with any GitHub repo — embed the codebase, cosine search, LLM-powered answers.
 
 <br/>
-
-[![frontend](https://img.shields.io/badge/frontend-repo-000?style=flat-square&logo=github)](https://github.com/Soham109/codebase-rag-frontend)
-[![backend](https://img.shields.io/badge/backend-repo-000?style=flat-square&logo=github)](https://github.com/Soham109/Codebase-RAG-Backend)
+<a href="https://github.com/Soham109/codebase-rag-frontend"><img src="https://img.shields.io/badge/↗_frontend-repo-181717?style=flat-square&logo=github&logoColor=white" alt="frontend"/></a>
+<a href="https://github.com/Soham109/Codebase-RAG-Backend"><img src="https://img.shields.io/badge/↗_backend-repo-181717?style=flat-square&logo=github&logoColor=white" alt="backend"/></a>
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-**[LOB Forecasting](https://github.com/Soham109/limit-order-book-forecasting)** · `Python · sklearn`
+#### [`LOB Forecasting`](https://github.com/Soham109/limit-order-book-forecasting)
+**Python · sklearn**
 
-microstructure signals → mid-price classifiers across FI-2010 horizons. hgb macro F1 **0.841** at h3.
+Microstructure signals → mid-price classifiers. **0.841** macro F1 at horizon 3.
 
 </td>
 <td width="50%" valign="top">
 
-**[Cursor Hacks ’26](https://github.com/Soham109/claudehacks2026)** · `🏆 1st place`
+#### [`Cursor Hacks '26`](https://github.com/Soham109/claudehacks2026)
+**🏆 1st place**
 
-whatever we built at 2am that somehow worked on demo day. check the repo for the receipts.
+Built at 2am. Somehow worked on demo day.
 
 </td>
 </tr>
@@ -87,68 +87,45 @@ whatever we built at 2am that somehow worked on demo day. check the repo for the
 
 ---
 
-### 📊 github stats
+### ⌨️ monkeytype · [`FastestTypist5`](https://monkeytype.com/profile/FastestTypist5)
 
-<div align="center">
-
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=Soham109&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0d1117&title_color=818CF8&icon_color=6366f1" />
-<img height="165" src="https://github-readme-streak-stats.demolab.com/?user=Soham109&theme=tokyonight&hide_border=true&background=0d1117&ring=6366f1&fire=818CF8&currStreakLabel=818CF8" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Soham109&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=818CF8" />
-
-</div>
+<table align="center">
+<tr>
+<td align="center"><b>15 sec PB</b><br/><code>193 WPM</code><br/><sub>99.6% acc</sub></td>
+<td align="center"><b>60 sec PB</b><br/><code>155 WPM</code><br/><sub>96.1% acc</sub></td>
+<td align="center"><b>120 sec PB</b><br/><code>141 WPM</code><br/><sub>95.6% acc</sub></td>
+<td align="center"><b>10 words PB</b><br/><code>217 WPM</code><br/><sub>peak burst</sub></td>
+</tr>
+<tr>
+<td align="center" colspan="4"><sub>3,435 tests · 25+ hours typed · top 0.44% worldwide</sub></td>
+</tr>
+</table>
 
 ---
 
-### 🧰 stack
+### stack
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/Rust-000?style=for-the-badge&logo=rust&logoColor=white" />
-  <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
-  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
-  <img src="https://img.shields.io/badge/Next.js-000?style=for-the-badge&logo=nextdotjs&logoColor=white" />
-  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=python,rust,cpp,ts,react,nextjs,fastapi,postgres,docker,linux,git,vscode&perline=12" alt="Tech stack"/></a>
 </p>
 
 ---
 
-### 🏅 fun facts (no flex zone)
+### highlights
 
-```
-🏆  1st — Cursor Hacks ’26 · BadgerAI ’26
-🥈  2nd — UW Blockchain Hackathon ’25
-🎯  2× AIME · IOQM national top 10%
-⌨️  top 0.44% typist worldwide — WPM go brr
-📈  published ML research · dean’s list · GPA 3.96
-```
-
----
-
-### 📈 activity
-
-<div align="center">
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Soham109&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=818CF8&line=6366f1&point=818CF8&area=true" width="95%" />
-
-<br/><br/>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Soham109/Soham109/output/github-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Soham109/Soham109/output/github-snake.svg">
-  <img alt="github contribution snake eating my commits" src="https://raw.githubusercontent.com/Soham109/Soham109/output/github-snake-dark.svg">
-</picture>
-
-</div>
+| | |
+| :--- | :--- |
+| 🏆 | **1st** — Cursor Hacks '26 · BadgerAI '26 |
+| 🥈 | **2nd** — UW Blockchain Hackathon '25 |
+| 🎯 | **2× AIME** · IOQM national top 10% |
+| 📈 | Published ML research · Dean's List · **3.96 GPA** |
 
 ---
 
-<div align="center">
+<p align="center">
+  <i>if you're building something weird and useful, i probably want to hear about it.</i>
+</p>
 
-**if you’re building something weird and useful, i probably want to hear about it.**
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:6366f1,100:1e1b4b&height=80&section=footer&fontSize=14&fontColor=c4b5fd&animation=twinkling" width="100%" />
-
-</div>
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=Soham109&color=6366f1&style=flat-square&label=profile+views" alt="Profile views"/>
+</p>
