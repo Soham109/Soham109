@@ -38,10 +38,6 @@ I live where **quantitative finance** meets **systems software** — margin engi
 
 <br/><br/>
 
-<a href="https://www.linkedin.com/in/soham-aggarwal5/"><img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/card-nse.png" width="464" alt="NSE Clearing — risk intern"/></a>
-&nbsp;&nbsp;
-<a href="https://github.com/Soham109/limit-order-book-forecasting"><img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/card-lob.png" width="464" alt="Limit order book forecasting"/></a>
-
 </div>
 
 <br/>
