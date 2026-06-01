@@ -1,10 +1,10 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/banner.svg" width="100%" alt="SOHAM AGGARWAL — pixel banner"/>
+<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/banner.png" width="960" alt="SOHAM AGGARWAL — pixel banner"/>
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/hud.svg" width="720" alt="Player HUD"/>
+<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/hud.png" width="720" alt="Player HUD"/>
 
 <br/><br/>
 
@@ -25,7 +25,7 @@
 
 </div>
 
-<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/divider.svg" width="100%" alt=""/>
+<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/divider.png" width="100%" alt=""/>
 
 <br/>
 
@@ -58,7 +58,7 @@ I build where **quantitative finance** meets **software** — margin engines, ma
 </tr>
 </table>
 
-<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/divider.svg" width="100%" alt=""/>
+<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/divider.png" width="100%" alt=""/>
 
 <br/>
 
@@ -67,11 +67,11 @@ I build where **quantitative finance** meets **software** — margin engines, ma
 <div align="center">
 
 <a href="https://www.linkedin.com/in/soham-aggarwal5/">
-<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/level-nse.svg" width="420" alt="NSE Clearing"/>
+<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/level-nse.png" width="420" alt="NSE Clearing"/>
 </a>
 &nbsp;&nbsp;
 <a href="https://github.com/Soham109/limit-order-book-forecasting">
-<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/level-lob.svg" width="420" alt="LOB Forecasting"/>
+<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/level-lob.png" width="420" alt="LOB Forecasting"/>
 </a>
 
 </div>
@@ -80,7 +80,7 @@ I build where **quantitative finance** meets **software** — margin engines, ma
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/level-secret.svg" width="420" alt="Secret worlds"/>
+<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/level-secret.png" width="420" alt="Secret worlds"/>
 
 </div>
 
@@ -105,7 +105,7 @@ Secret level · side project · terminal tool for competitive programming.
 </tr>
 </table>
 
-<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/divider.svg" width="100%" alt=""/>
+<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/divider.png" width="100%" alt=""/>
 
 <br/>
 
@@ -114,12 +114,12 @@ Secret level · side project · terminal tool for competitive programming.
 <div align="center">
 
 <a href="https://monkeytype.com/profile/FastestTypist5">
-<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/typing.svg" width="720" alt="Monkeytype high scores"/>
+<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/typing.png" width="720" alt="Monkeytype high scores"/>
 </a>
 
 </div>
 
-<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/divider.svg" width="100%" alt=""/>
+<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/divider.png" width="100%" alt=""/>
 
 <br/>
 
@@ -135,7 +135,7 @@ Secret level · side project · terminal tool for competitive programming.
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/trophy.svg" width="720" alt="Achievements"/>
+<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/trophy.png" width="720" alt="Achievements"/>
 
 </div>
 
