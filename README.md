@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/banner.png" width="960" alt="SOHAM AGGARWAL — pixel banner"/>
+<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/banner.png" width="960" alt="Soham Aggarwal pixel banner"/>
 
 <br/>
 
@@ -25,7 +25,7 @@
 
 </div>
 
-<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/divider.png" width="100%" alt=""/>
+<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/divider.png" width="800" height="20" alt=""/>
 
 <br/>
 
@@ -58,7 +58,7 @@ I build where **quantitative finance** meets **software** — margin engines, ma
 </tr>
 </table>
 
-<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/divider.png" width="100%" alt=""/>
+<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/divider.png" width="800" height="20" alt=""/>
 
 <br/>
 
@@ -105,7 +105,7 @@ Secret level · side project · terminal tool for competitive programming.
 </tr>
 </table>
 
-<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/divider.png" width="100%" alt=""/>
+<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/divider.png" width="800" height="20" alt=""/>
 
 <br/>
 
@@ -119,7 +119,7 @@ Secret level · side project · terminal tool for competitive programming.
 
 </div>
 
-<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/divider.png" width="100%" alt=""/>
+<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/divider.png" width="800" height="20" alt=""/>
 
 <br/>
 
