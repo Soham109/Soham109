@@ -1,84 +1,156 @@
 <div align="center">
 
-# Soham Aggarwal
-
-### CS & Math @ UW–Madison · markets · risk · systems
+<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/banner.svg" width="100%" alt="SOHAM AGGARWAL — pixel banner"/>
 
 <br/>
 
-<a href="https://sohamaggarwal.com"><img src="https://img.icons8.com/fluency/48/domain.png" width="36" height="36" alt="Website"/></a>&nbsp;&nbsp;
-<a href="https://www.linkedin.com/in/soham-aggarwal5/"><img src="https://img.icons8.com/fluency/48/linkedin.png" width="36" height="36" alt="LinkedIn"/></a>&nbsp;&nbsp;
-<a href="mailto:saggarwal44@wisc.edu"><img src="https://img.icons8.com/fluency/48/new-post.png" width="36" height="36" alt="Email"/></a>&nbsp;&nbsp;
-<a href="https://github.com/Soham109"><img src="https://img.icons8.com/fluency/48/github.png" width="36" height="36" alt="GitHub"/></a>&nbsp;&nbsp;
-<a href="https://monkeytype.com/profile/FastestTypist5"><img src="https://img.icons8.com/fluency/48/keyboard.png" width="36" height="36" alt="Monkeytype"/></a>
+<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/hud.svg" width="720" alt="Player HUD"/>
 
 <br/><br/>
 
-*Half math problem. Half systems problem. That's the sweet spot.*
+<a href="https://sohamaggarwal.com"><img src="https://img.icons8.com/fluency/48/domain.png" width="32" height="32" alt="Website"/></a>&nbsp;
+<a href="https://www.linkedin.com/in/soham-aggarwal5/"><img src="https://img.icons8.com/fluency/48/linkedin.png" width="32" height="32" alt="LinkedIn"/></a>&nbsp;
+<a href="mailto:saggarwal44@wisc.edu"><img src="https://img.icons8.com/fluency/48/new-post.png" width="32" height="32" alt="Email"/></a>&nbsp;
+<a href="https://github.com/Soham109"><img src="https://img.icons8.com/fluency/48/github.png" width="32" height="32" alt="GitHub"/></a>&nbsp;
+<a href="https://monkeytype.com/profile/FastestTypist5"><img src="https://img.icons8.com/fluency/48/keyboard.png" width="32" height="32" alt="Monkeytype"/></a>
+
+<br/><br/>
+
+<pre>
+╔══════════════════════════════════════════════════════════════════╗
+║  PRESS START — half math problem, half systems problem.          ║
+║  That's the sweet spot.                                          ║
+╚══════════════════════════════════════════════════════════════════╝
+</pre>
+
+</div>
+
+<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/divider.svg" width="100%" alt=""/>
+
+<br/>
+
+## 🎮 PLAYER SELECT
+
+<table>
+<tr>
+<td width="50%">
+
+**CS & Math @ UW–Madison** · Dean's List · **3.96 GPA** · '28
+
+Risk intern @ **NSE Clearing**. Ex tech lead **Neuro86** @ MIT Media Lab.
+
+I build where **quantitative finance** meets **software** — margin engines, market microstructure, ML pipelines, and side quests when something won't leave my head alone.
+
+</td>
+<td width="50%" align="center">
+
+```
+    ██╗    ██╗ ██████╗ ██████╗ ██╗     ██████╗ 
+    ██║    ██║██╔═══██╗██╔══██╗██║     ██╔══██╗
+    ██║ █╗ ██║██║   ██║██║  ██║██║     ██║  ██║
+    ██║███╗██║██║   ██║██║  ██║██║     ██║  ██║
+    ╚███╔███╔╝╚██████╔╝██████╔╝███████╗██████╔╝
+     ╚══╝╚══╝  ╚═════╝ ╚═════╝ ╚══════╝╚═════╝ 
+         L E V E L   S E L E C T
+```
+
+</td>
+</tr>
+</table>
+
+<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/divider.svg" width="100%" alt=""/>
+
+<br/>
+
+## 🗺️ MAIN WORLDS
+
+<div align="center">
+
+<a href="https://www.linkedin.com/in/soham-aggarwal5/">
+<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/level-nse.svg" width="420" alt="NSE Clearing"/>
+</a>
+&nbsp;&nbsp;
+<a href="https://github.com/Soham109/limit-order-book-forecasting">
+<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/level-lob.svg" width="420" alt="LOB Forecasting"/>
+</a>
 
 </div>
 
 <br/>
 
-## About me
+<div align="center">
 
-I'm a **CS & Math** student at **UW–Madison** (Dean's List, **3.96 GPA**, '28) who builds at the intersection of **quantitative finance** and **software** — risk engines, market microstructure, ML pipelines, and side projects when something interesting won't leave my head alone.
+<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/level-secret.svg" width="420" alt="Secret worlds"/>
 
-**Risk intern @ NSE Clearing** · ex tech lead **Neuro86** @ MIT Media Lab · Madison, WI
-
-<br/>
-
-## What I'm working on
-
-**NSE Clearing — Risk**  
-Collateral optimization for **1M+ accounts**. Dinic max-flow on sparse ownership graphs, graph pruning (~**70%** fewer active nodes), margin recompute, efficient frontiers, rolling backtests, Sharpe & Jensen's alpha.
+</div>
 
 <br/>
 
-**[LOB Forecasting](https://github.com/Soham109/limit-order-book-forecasting)**  
-Short-horizon limit order book prediction — spread, queue imbalance, microprice, depth pressure, vol signals → mid-price classifiers on FI-2010. **0.841** macro F1 @ h3.
+<table>
+<tr>
+<td width="50%">
+
+### 🟣 [Codebase RAG](https://github.com/Soham109/Codebase-RAG-Backend)
+
+Chat with any repo — embeddings, cosine search, LLM answers over your codebase.
+
+</td>
+<td width="50%">
+
+### 🟢 [CPOS](https://github.com/Soham109/cpos)
+
+Secret level · side project · terminal tool for competitive programming.
+
+</td>
+</tr>
+</table>
+
+<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/divider.svg" width="100%" alt=""/>
 
 <br/>
 
-## Also on GitHub
+## ⌨️ HIGH SCORES
 
-| Project | What it is |
-| :-- | :-- |
-| [**Codebase RAG**](https://github.com/Soham109/Codebase-RAG-Backend) | Chat with any repo — embeddings, cosine search, LLM answers |
-| [**CPOS**](https://github.com/Soham109/cpos) | Side project — terminal tool for competitive programming |
+<div align="center">
 
-<br/>
+<a href="https://monkeytype.com/profile/FastestTypist5">
+<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/typing.svg" width="720" alt="Monkeytype high scores"/>
+</a>
 
-## Typing
+</div>
 
-<p align="center">
-<a href="https://monkeytype.com/profile/FastestTypist5"><b>FastestTypist5</b></a> on Monkeytype
-</p>
-
-<p align="center">
-193 · 155 · 141 · 217 WPM &nbsp;·&nbsp; 15s / 60s / 120s / 10-word &nbsp;·&nbsp; top 0.44% worldwide
-</p>
+<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/divider.svg" width="100%" alt=""/>
 
 <br/>
 
-## Tools
+## 🎒 INVENTORY
 
-<p align="center">
+<div align="center">
+
 <img src="https://skillicons.dev/icons?i=python,rust,cpp,ts,react,nextjs,fastapi,postgres,docker,linux,git,vscode&perline=12" alt="Python, Rust, C++, TypeScript, React, Next.js, FastAPI, PostgreSQL, Docker, Linux, Git, VS Code"/>
-</p>
 
-<br/>
-
-## Highlights
-
-<p align="center">
-BadgerAI '26 🥇 &nbsp;·&nbsp; Cursor Hacks '26 🥇 &nbsp;·&nbsp; UW Blockchain '25 🥈 &nbsp;·&nbsp; 2× AIME &nbsp;·&nbsp; IOQM top 10% &nbsp;·&nbsp; published ML research
-</p>
+</div>
 
 <br/>
 
 <div align="center">
 
-**[sohamaggarwal.com](https://sohamaggarwal.com)** · open to interesting work in markets & software
+<img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/trophy.svg" width="720" alt="Achievements"/>
+
+</div>
+
+<br/>
+
+<div align="center">
+
+```
+┌────────────────────────────────────────────────────────────┐
+│  GAME OVER?  Nah.  Just saving progress.                   │
+│  sohamaggarwal.com  ·  open to interesting work            │
+│  in markets & software                                     │
+└────────────────────────────────────────────────────────────┘
+```
+
+**[sohamaggarwal.com](https://sohamaggarwal.com)** · INSERT COIN TO CONTINUE 🪙
 
 </div>

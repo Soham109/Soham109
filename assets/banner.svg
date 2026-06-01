@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 220" width="960" height="220">
+  <defs>
+    <style>
+      text { font-family: "Courier New", Courier, monospace; font-weight: bold; }
+    </style>
+  </defs>
+  <!-- sky -->
+  <rect width="960" height="176" fill="#5c94fc"/>
+  <rect y="16" width="960" height="16" fill="#4478dc"/>
+  <rect y="48" width="960" height="16" fill="#4478dc"/>
+  <rect y="80" width="960" height="16" fill="#4478dc"/>
+  <rect y="112" width="960" height="16" fill="#4478dc"/>
+  <!-- clouds -->
+  <g fill="#f0f8ff">
+    <rect x="32" y="28" width="16" height="16"/><rect x="48" y="20" width="16" height="16"/><rect x="64" y="20" width="16" height="16"/><rect x="80" y="28" width="16" height="16"/><rect x="48" y="36" width="32" height="16"/>
+    <rect x="440" y="36" width="16" height="16"/><rect x="456" y="28" width="16" height="16"/><rect x="472" y="28" width="16" height="16"/><rect x="488" y="36" width="16" height="16"/>
+    <rect x="760" y="24" width="16" height="16"/><rect x="776" y="16" width="16" height="16"/><rect x="792" y="16" width="16" height="16"/><rect x="808" y="24" width="16" height="16"/>
+  </g>
+  <!-- hills -->
+  <rect y="160" width="960" height="16" fill="#3cb44a"/>
+  <rect y="176" width="960" height="44" fill="#288030"/>
+  <!-- brick blocks -->
+  <g>
+    <rect x="16" y="152" width="16" height="16" fill="#b45028"/><rect x="32" y="152" width="16" height="16" fill="#8c3719"/>
+    <rect x="16" y="168" width="16" height="16" fill="#8c3719"/><rect x="32" y="168" width="16" height="16" fill="#b45028"/>
+    <rect x="48" y="152" width="16" height="16" fill="#b45028"/><rect x="64" y="152" width="16" height="16" fill="#8c3719"/>
+    <rect x="48" y="168" width="16" height="16" fill="#8c3719"/><rect x="64" y="168" width="16" height="16" fill="#b45028"/>
+    <!-- ? block -->
+    <rect x="80" y="152" width="32" height="32" fill="#ffd23c" stroke="#c8961e" stroke-width="2"/>
+    <rect x="88" y="156" width="8" height="8" fill="#fff8dc"/><rect x="96" y="156" width="8" height="8" fill="#fff8dc"/>
+    <rect x="96" y="164" width="8" height="8" fill="#fff8dc"/><rect x="88" y="172" width="8" height="8" fill="#fff8dc"/>
+    <rect x="120" y="152" width="16" height="16" fill="#b45028"/><rect x="136" y="152" width="16" height="16" fill="#8c3719"/>
+    <rect x="120" y="168" width="16" height="16" fill="#8c3719"/><rect x="136" y="168" width="16" height="16" fill="#b45028"/>
+  </g>
+  <!-- pixel hero -->
+  <g>
+    <rect x="680" y="128" width="8" height="8" fill="#3c2314"/><rect x="688" y="128" width="8" height="8" fill="#3c2314"/><rect x="696" y="128" width="8" height="8" fill="#3c2314"/><rect x="704" y="128" width="8" height="8" fill="#3c2314"/>
+    <rect x="672" y="136" width="8" height="8" fill="#3c2314"/><rect x="680" y="136" width="8" height="8" fill="#ffc896"/><rect x="688" y="136" width="8" height="8" fill="#ffc896"/><rect x="696" y="136" width="8" height="8" fill="#ffc896"/><rect x="704" y="136" width="8" height="8" fill="#ffc896"/><rect x="712" y="136" width="8" height="8" fill="#3c2314"/>
+    <rect x="672" y="144" width="8" height="8" fill="#3c2314"/><rect x="680" y="144" width="8" height="8" fill="#ffc896"/><rect x="688" y="144" width="8" height="8" fill="#ffc896"/><rect x="696" y="144" width="8" height="8" fill="#ffc896"/><rect x="704" y="144" width="8" height="8" fill="#ffc896"/><rect x="712" y="144" width="8" height="8" fill="#ffc896"/><rect x="720" y="144" width="8" height="8" fill="#3c2314"/>
+    <rect x="688" y="152" width="8" height="8" fill="#ffc896"/><rect x="696" y="152" width="8" height="8" fill="#ffc896"/><rect x="704" y="152" width="8" height="8" fill="#ffc896"/>
+    <rect x="688" y="160" width="16" height="8" fill="#3c8cff"/><rect x="704" y="160" width="8" height="8" fill="#3c8cff"/>
+    <rect x="688" y="168" width="8" height="8" fill="#3c8cff"/><rect x="704" y="168" width="8" height="8" fill="#3c8cff"/>
+    <rect x="688" y="176" width="8" height="8" fill="#32325a"/><rect x="704" y="176" width="8" height="8" fill="#32325a"/>
+    <rect x="688" y="184" width="8" height="8" fill="#32325a"/><rect x="704" y="184" width="8" height="8" fill="#32325a"/>
+  </g>
+  <!-- coin -->
+  <circle cx="748" cy="156" r="14" fill="#ffd23c" stroke="#c8961e" stroke-width="3"/>
+  <rect x="744" y="152" width="8" height="8" fill="#c8961e"/>
+  <!-- star -->
+  <polygon points="780,148 784,160 796,160 786,168 790,180 780,172 770,180 774,168 764,160 776,160" fill="#ffd23c"/>
+  <!-- title panel -->
+  <rect x="200" y="48" width="560" height="104" fill="#fff" stroke="#ffd23c" stroke-width="4"/>
+  <rect x="208" y="56" width="544" height="88" fill="#191928"/>
+  <text x="480" y="92" fill="#ffd23c" font-size="36" text-anchor="middle">SOHAM AGGARWAL</text>
+  <text x="480" y="124" fill="#fff" font-size="16" text-anchor="middle">CS + MATH  ·  MARKETS  ·  RISK  ·  SYSTEMS</text>
+</svg>
