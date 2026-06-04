@@ -14,7 +14,7 @@
 &nbsp;&nbsp;
 <a href="https://monkeytype.com/profile/FastestTypist5"><img src="https://img.icons8.com/fluency/48/keyboard.png" width="34" height="34" alt="Monkeytype"/></a>
 
-<br/>
+<!-- <br/>
 
 <img src="https://raw.githubusercontent.com/Soham109/Soham109/main/assets/divider.png" width="800" height="24" alt=""/>
 
@@ -24,7 +24,7 @@
 
 </div>
 
-<br/>
+<br/> -->
 
 **CS & Math @ UW–Madison**
 
