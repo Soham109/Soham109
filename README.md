@@ -28,7 +28,7 @@
 
 **CS & Math @ UW–Madison**
 
-I am exploring **quantitative finance** and **systems software**. Currently a **Risk intern @ NSE Clearing**; previously tech lead of **Neuro86 @ MIT Media Lab**. I build the side quests too, whenever a problem refuses to leave my head.
+I am exploring **quantitative finance** and **systems software**. Currently a **Quant Analyst Intern @ iRage**; previously Risk management inter @ **NSE** & tech lead of **Neuro86 @ MIT Media Lab**. 
 
 <br/>
 
