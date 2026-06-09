@@ -28,7 +28,7 @@
 
 **CS & Math @ UW–Madison**
 
-I am exploring **quantitative finance** and **systems software**. Currently a **Quant Analyst Intern @ iRage**; previously Risk management inter @ **NSE** & tech lead of **Neuro86 @ MIT Media Lab**. 
+I am exploring **quantitative finance** and **systems software**. Currently a **Quant Analyst Intern @ iRage**; previously risk management intern @ **NSE** & tech lead of **Neuro86 @ MIT Media Lab**. 
 
 <br/>
 
