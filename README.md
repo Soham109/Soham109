@@ -32,6 +32,6 @@ I am exploring **quantitative finance** and **systems software**. Currently a **
 
 <br/>
 
-**[sohamaggarwal.com](https://sohamaggarwal.com)** · open to interesting work in finance & software · `INSERT COIN TO CONTINUE`
+**[sohamaggarwal.com](https://sohamaggarwal.com)** · open to interesting work in finance & software
 
 </div>
