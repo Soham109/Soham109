@@ -4,15 +4,13 @@
 
 <br/><br/>
 
-<a href="https://sohamaggarwal.com"><img src="https://img.icons8.com/fluency/48/domain.png" width="34" height="34" alt="Website"/></a>
-&nbsp;&nbsp;
-<a href="https://www.linkedin.com/in/soham-aggarwal5/"><img src="https://img.icons8.com/fluency/48/linkedin.png" width="34" height="34" alt="LinkedIn"/></a>
-&nbsp;&nbsp;
-<a href="mailto:saggarwal44@wisc.edu"><img src="https://img.icons8.com/fluency/48/new-post.png" width="34" height="34" alt="Email"/></a>
-&nbsp;&nbsp;
-<a href="https://github.com/Soham109"><img src="https://img.icons8.com/fluency/48/github.png" width="34" height="34" alt="GitHub"/></a>
-&nbsp;&nbsp;
-<a href="https://monkeytype.com/profile/FastestTypist5"><img src="https://img.icons8.com/fluency/48/keyboard.png" width="34" height="34" alt="Monkeytype"/></a>
+<table align="center"><tr><td>
+<a href="https://sohamaggarwal.com"><img align="left" src="https://img.icons8.com/fluency/48/domain.png" width="34" height="34" alt="Website"/></a>
+<a href="https://www.linkedin.com/in/soham-aggarwal5/"><img align="left" src="https://img.icons8.com/fluency/48/linkedin.png" width="34" height="34" alt="LinkedIn"/></a>
+<a href="mailto:saggarwal44@wisc.edu"><img align="left" src="https://img.icons8.com/fluency/48/new-post.png" width="34" height="34" alt="Email"/></a>
+<a href="https://github.com/Soham109"><img align="left" src="https://img.icons8.com/fluency/48/github.png" width="34" height="34" alt="GitHub"/></a>
+<a href="https://monkeytype.com/profile/FastestTypist5"><img align="left" src="https://img.icons8.com/fluency/48/keyboard.png" width="34" height="34" alt="Monkeytype"/></a>
+</td></tr></table>
 
 <!-- <br/>
 
