@@ -26,7 +26,7 @@
 
 **CS & Math @ UW–Madison**
 
-I am exploring **quantitative finance** and **systems software**. Currently a **Software Engineer (MTS) @ Haurlan**; previously quant analyst intern @ Haurlan, risk management intern @ **NSE** & tech lead of **Neuro86 @ MIT Media Lab**. 
+I am exploring **quantitative finance** and **systems software**. Currently a **Software Engineer (MTS) @ Haurlan**; previously quant analyst intern @ **iRage**, risk management intern @ **NSE** & tech lead of **Neuro86 @ MIT Media Lab**. 
 
 <br/>
 
